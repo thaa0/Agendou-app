@@ -270,7 +270,8 @@ const API_CONFIG = {
             login: '/v1/auth/login'
         },
         profissional: {
-            finalizarCadastro: '/v1/profissional'
+            finalizarCadastro: '/v1/profissional',
+            obter: '/v1/profissional'
         },
         configuracao: {
             politicas: '/v1/configuracao'

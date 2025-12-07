@@ -566,7 +566,7 @@ const diasSemana = [
         short: "Dom"
     }
 ];
-function WorkingHoursConfig() {
+function WorkingHoursConfig({ initialHorarios = [] }) {
     const [horarios, setHorarios] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(diasSemana.map((dia)=>({
             diaSemana: dia.id,
             horaInicio: "09:00",
@@ -580,16 +580,38 @@ function WorkingHoursConfig() {
     const [isEditMode, setIsEditMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isSaved, setIsSaved] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [savedHorarios, setSavedHorarios] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
-    // Verifica no localStorage se já foi salvo
+    // Inicializa com os dados do backend
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const saved = localStorage.getItem('agenda_horarios_salvos');
-        if (saved === 'true') {
+        if (initialHorarios && initialHorarios.length > 0) {
+            console.log('🔍 DEBUG: Inicializando WorkingHoursConfig com horários:', initialHorarios);
+            const horariosCarregados = diasSemana.map((dia)=>{
+                const horarioBackend = initialHorarios.find((h)=>h.diaSemana === dia.id);
+                if (horarioBackend) {
+                    return {
+                        diaSemana: dia.id,
+                        horaInicio: horarioBackend.horaInicio || "09:00",
+                        horaFim: horarioBackend.horaFim || "18:00",
+                        ativo: horarioBackend.ativo ?? true
+                    };
+                }
+                return {
+                    diaSemana: dia.id,
+                    horaInicio: "09:00",
+                    horaFim: "18:00",
+                    ativo: dia.id <= 5
+                };
+            });
+            setHorarios(horariosCarregados);
+            setSavedHorarios(horariosCarregados);
             setIsSaved(true);
             setIsEditMode(false);
         } else {
+            console.log('🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição');
             setIsEditMode(true);
         }
-    }, []);
+    }, [
+        initialHorarios
+    ]);
     const handleDayToggle = (diaSemana)=>{
         setHorarios((prev)=>prev.map((h)=>h.diaSemana === diaSemana ? {
                     ...h,
@@ -647,8 +669,7 @@ function WorkingHoursConfig() {
             ]);
             setIsSaved(true);
             setIsEditMode(false);
-            localStorage.setItem('agenda_horarios_salvos', 'true');
-            console.log('✅ Agenda configurada com sucesso!');
+            console.log('✅ Horários configurados com sucesso!');
         } catch (err) {
             const apiError = err;
             if (apiError.status === 401) {
@@ -691,7 +712,7 @@ function WorkingHoursConfig() {
                                         className: "w-5 h-5 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 169,
+                                        lineNumber: 196,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -704,32 +725,32 @@ function WorkingHoursConfig() {
                                                         className: "w-5 h-5 text-green-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 173,
+                                                        lineNumber: 200,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                lineNumber: 171,
+                                                lineNumber: 198,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                 children: "Horários configurados"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                lineNumber: 175,
+                                                lineNumber: 202,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 170,
+                                        lineNumber: 197,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/working-hours-config.tsx",
-                                lineNumber: 168,
+                                lineNumber: 195,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -741,25 +762,25 @@ function WorkingHoursConfig() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 179,
+                                        lineNumber: 206,
                                         columnNumber: 15
                                     }, this),
                                     "Editar"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/working-hours-config.tsx",
-                                lineNumber: 178,
+                                lineNumber: 205,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/working-hours-config.tsx",
-                        lineNumber: 167,
+                        lineNumber: 194,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/working-hours-config.tsx",
-                    lineNumber: 166,
+                    lineNumber: 193,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -775,7 +796,7 @@ function WorkingHoursConfig() {
                                         children: dia?.label
                                     }, void 0, false, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 190,
+                                        lineNumber: 217,
                                         columnNumber: 19
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -787,30 +808,30 @@ function WorkingHoursConfig() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 191,
+                                        lineNumber: 218,
                                         columnNumber: 19
                                     }, this)
                                 ]
                             }, h.diaSemana, true, {
                                 fileName: "[project]/components/working-hours-config.tsx",
-                                lineNumber: 189,
+                                lineNumber: 216,
                                 columnNumber: 17
                             }, this);
                         })
                     }, void 0, false, {
                         fileName: "[project]/components/working-hours-config.tsx",
-                        lineNumber: 185,
+                        lineNumber: 212,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/working-hours-config.tsx",
-                    lineNumber: 184,
+                    lineNumber: 211,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/working-hours-config.tsx",
-            lineNumber: 165,
+            lineNumber: 192,
             columnNumber: 7
         }, this);
     }
@@ -826,33 +847,33 @@ function WorkingHoursConfig() {
                                 className: "w-5 h-5 text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/working-hours-config.tsx",
-                                lineNumber: 208,
+                                lineNumber: 235,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
                                 children: "Horários de Atendimento"
                             }, void 0, false, {
                                 fileName: "[project]/components/working-hours-config.tsx",
-                                lineNumber: 209,
+                                lineNumber: 236,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/working-hours-config.tsx",
-                        lineNumber: 207,
+                        lineNumber: 234,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "Defina seus horários de trabalho para cada dia da semana"
                     }, void 0, false, {
                         fileName: "[project]/components/working-hours-config.tsx",
-                        lineNumber: 211,
+                        lineNumber: 238,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/working-hours-config.tsx",
-                lineNumber: 206,
+                lineNumber: 233,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -870,7 +891,7 @@ function WorkingHoursConfig() {
                                             className: "w-4 h-4 text-primary"
                                         }, void 0, false, {
                                             fileName: "[project]/components/working-hours-config.tsx",
-                                            lineNumber: 218,
+                                            lineNumber: 245,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -878,13 +899,13 @@ function WorkingHoursConfig() {
                                             children: "Aplicar mesmo horário para todos os dias"
                                         }, void 0, false, {
                                             fileName: "[project]/components/working-hours-config.tsx",
-                                            lineNumber: 219,
+                                            lineNumber: 246,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 217,
+                                    lineNumber: 244,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -899,7 +920,7 @@ function WorkingHoursConfig() {
                                                     children: "Início"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/working-hours-config.tsx",
-                                                    lineNumber: 223,
+                                                    lineNumber: 250,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$time$2d$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TimeInput"], {
@@ -909,13 +930,13 @@ function WorkingHoursConfig() {
                                                     placeholder: "09:00"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/working-hours-config.tsx",
-                                                    lineNumber: 224,
+                                                    lineNumber: 251,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/working-hours-config.tsx",
-                                            lineNumber: 222,
+                                            lineNumber: 249,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -927,7 +948,7 @@ function WorkingHoursConfig() {
                                                     children: "Fim"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/working-hours-config.tsx",
-                                                    lineNumber: 232,
+                                                    lineNumber: 259,
                                                     columnNumber: 17
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$time$2d$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TimeInput"], {
@@ -937,13 +958,13 @@ function WorkingHoursConfig() {
                                                     placeholder: "18:00"
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/working-hours-config.tsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 260,
                                                     columnNumber: 17
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/working-hours-config.tsx",
-                                            lineNumber: 231,
+                                            lineNumber: 258,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -958,25 +979,25 @@ function WorkingHoursConfig() {
                                                         className: "w-4 h-4 mr-2"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 242,
+                                                        lineNumber: 269,
                                                         columnNumber: 19
                                                     }, this),
                                                     "Aplicar"
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                lineNumber: 241,
+                                                lineNumber: 268,
                                                 columnNumber: 17
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/components/working-hours-config.tsx",
-                                            lineNumber: 240,
+                                            lineNumber: 267,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 221,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -984,13 +1005,13 @@ function WorkingHoursConfig() {
                                     children: "Formato 24 horas (ex: 09:00, 14:30, 20:00)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 247,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/working-hours-config.tsx",
-                            lineNumber: 216,
+                            lineNumber: 243,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1000,7 +1021,7 @@ function WorkingHoursConfig() {
                                     children: "Configure cada dia individualmente"
                                 }, void 0, false, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 254,
+                                    lineNumber: 281,
                                     columnNumber: 13
                                 }, this),
                                 horarios.map((h)=>{
@@ -1017,7 +1038,7 @@ function WorkingHoursConfig() {
                                                         onCheckedChange: ()=>handleDayToggle(h.diaSemana)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 265,
+                                                        lineNumber: 292,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Label"], {
@@ -1026,13 +1047,13 @@ function WorkingHoursConfig() {
                                                         children: dia?.label
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 270,
+                                                        lineNumber: 297,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                lineNumber: 264,
+                                                lineNumber: 291,
                                                 columnNumber: 19
                                             }, this),
                                             h.ativo && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1047,7 +1068,7 @@ function WorkingHoursConfig() {
                                                                 children: "Horário de Início"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                                lineNumber: 281,
+                                                                lineNumber: 308,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$time$2d$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TimeInput"], {
@@ -1057,13 +1078,13 @@ function WorkingHoursConfig() {
                                                                 placeholder: "09:00"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                                lineNumber: 282,
+                                                                lineNumber: 309,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 280,
+                                                        lineNumber: 307,
                                                         columnNumber: 23
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1075,7 +1096,7 @@ function WorkingHoursConfig() {
                                                                 children: "Horário de Fim"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                                lineNumber: 290,
+                                                                lineNumber: 317,
                                                                 columnNumber: 25
                                                             }, this),
                                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$time$2d$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["TimeInput"], {
@@ -1085,32 +1106,32 @@ function WorkingHoursConfig() {
                                                                 placeholder: "18:00"
                                                             }, void 0, false, {
                                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                                lineNumber: 291,
+                                                                lineNumber: 318,
                                                                 columnNumber: 25
                                                             }, this)
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/working-hours-config.tsx",
-                                                        lineNumber: 289,
+                                                        lineNumber: 316,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/working-hours-config.tsx",
-                                                lineNumber: 279,
+                                                lineNumber: 306,
                                                 columnNumber: 21
                                             }, this)
                                         ]
                                     }, h.diaSemana, true, {
                                         fileName: "[project]/components/working-hours-config.tsx",
-                                        lineNumber: 258,
+                                        lineNumber: 285,
                                         columnNumber: 17
                                     }, this);
                                 })
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/working-hours-config.tsx",
-                            lineNumber: 253,
+                            lineNumber: 280,
                             columnNumber: 11
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1118,7 +1139,7 @@ function WorkingHoursConfig() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/components/working-hours-config.tsx",
-                            lineNumber: 306,
+                            lineNumber: 333,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1130,7 +1151,7 @@ function WorkingHoursConfig() {
                                     children: isLoading ? "Salvando..." : isSaved ? "Atualizar Horários" : "Salvar Horários"
                                 }, void 0, false, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 312,
+                                    lineNumber: 339,
                                     columnNumber: 13
                                 }, this),
                                 isSaved && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -1141,30 +1162,30 @@ function WorkingHoursConfig() {
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/components/working-hours-config.tsx",
-                                    lineNumber: 317,
+                                    lineNumber: 344,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/working-hours-config.tsx",
-                            lineNumber: 311,
+                            lineNumber: 338,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/working-hours-config.tsx",
-                    lineNumber: 214,
+                    lineNumber: 241,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/working-hours-config.tsx",
-                lineNumber: 213,
+                lineNumber: 240,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/working-hours-config.tsx",
-        lineNumber: 205,
+        lineNumber: 232,
         columnNumber: 5
     }, this);
 }
@@ -2133,7 +2154,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$configura
 ;
 ;
 ;
-function BookingPolicies() {
+function BookingPolicies({ initialConfiguracao }) {
     const [intervaloCancelamentoHoras, setIntervaloCancelamentoHoras] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("6");
     const [msgLembreteAtendimento, setMsgLembreteAtendimento] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [msgPosAtendimento, setMsgPosAtendimento] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
@@ -2147,16 +2168,31 @@ function BookingPolicies() {
         msgLembreteAtendimento: "",
         msgPosAtendimento: ""
     });
-    // Verifica no localStorage se já foi salvo
+    // Inicializa com os dados do backend
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const saved = localStorage.getItem('configuracao_politicas_salva');
-        if (saved === 'true') {
+        // Verifica se initialConfiguracao existe e não é um objeto vazio
+        const isValidConfig = initialConfiguracao && Object.keys(initialConfiguracao).length > 0 && initialConfiguracao.intervaloCancelamentoHoras !== undefined && initialConfiguracao.msgLembreteAtendimento !== undefined && initialConfiguracao.msgPosAtendimento !== undefined;
+        if (isValidConfig) {
+            console.log('✅ Políticas carregadas do backend');
+            const intervalo = initialConfiguracao.intervaloCancelamentoHoras.toString();
+            const msgLembrete = initialConfiguracao.msgLembreteAtendimento;
+            const msgPos = initialConfiguracao.msgPosAtendimento;
+            setIntervaloCancelamentoHoras(intervalo);
+            setMsgLembreteAtendimento(msgLembrete);
+            setMsgPosAtendimento(msgPos);
+            setSavedConfig({
+                intervaloCancelamentoHoras: intervalo,
+                msgLembreteAtendimento: msgLembrete,
+                msgPosAtendimento: msgPos
+            });
             setIsSaved(true);
             setIsEditMode(false);
         } else {
             setIsEditMode(true);
         }
-    }, []);
+    }, [
+        initialConfiguracao
+    ]);
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setError("");
@@ -2201,8 +2237,6 @@ function BookingPolicies() {
             });
             setIsSaved(true);
             setIsEditMode(false);
-            // Salva flag no localStorage
-            localStorage.setItem('configuracao_politicas_salva', 'true');
             console.log('✅ Políticas configuradas com sucesso!');
         } catch (err) {
             const apiError = err;
@@ -2217,16 +2251,24 @@ function BookingPolicies() {
         }
     };
     const handleEdit = ()=>{
-        setIntervaloCancelamentoHoras(savedConfig.intervaloCancelamentoHoras);
-        setMsgLembreteAtendimento(savedConfig.msgLembreteAtendimento);
-        setMsgPosAtendimento(savedConfig.msgPosAtendimento);
+        // Usa os valores atuais salvos (ou do initialConfiguracao)
+        const intervaloAtual = savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras;
+        const msgLembreteAtual = savedConfig.msgLembreteAtendimento || msgLembreteAtendimento;
+        const msgPosAtual = savedConfig.msgPosAtendimento || msgPosAtendimento;
+        setIntervaloCancelamentoHoras(intervaloAtual);
+        setMsgLembreteAtendimento(msgLembreteAtual);
+        setMsgPosAtendimento(msgPosAtual);
         setIsEditMode(true);
         setError("");
     };
     const handleCancel = ()=>{
-        setIntervaloCancelamentoHoras(savedConfig.intervaloCancelamentoHoras);
-        setMsgLembreteAtendimento(savedConfig.msgLembreteAtendimento);
-        setMsgPosAtendimento(savedConfig.msgPosAtendimento);
+        // Restaura os valores salvos (ou do initialConfiguracao)
+        const intervaloAtual = savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras;
+        const msgLembreteAtual = savedConfig.msgLembreteAtendimento || msgLembreteAtendimento;
+        const msgPosAtual = savedConfig.msgPosAtendimento || msgPosAtendimento;
+        setIntervaloCancelamentoHoras(intervaloAtual);
+        setMsgLembreteAtendimento(msgLembreteAtual);
+        setMsgPosAtendimento(msgPosAtual);
         setIsEditMode(false);
         setError("");
     };
@@ -2245,7 +2287,7 @@ function BookingPolicies() {
                                         className: "w-5 h-5 text-primary"
                                     }, void 0, false, {
                                         fileName: "[project]/components/booking-policies.tsx",
-                                        lineNumber: 139,
+                                        lineNumber: 173,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2258,32 +2300,32 @@ function BookingPolicies() {
                                                         className: "w-5 h-5 text-green-600"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/booking-policies.tsx",
-                                                        lineNumber: 143,
+                                                        lineNumber: 177,
                                                         columnNumber: 19
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/booking-policies.tsx",
-                                                lineNumber: 141,
+                                                lineNumber: 175,
                                                 columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                                 children: "Políticas configuradas"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/booking-policies.tsx",
-                                                lineNumber: 145,
+                                                lineNumber: 179,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/booking-policies.tsx",
-                                        lineNumber: 140,
+                                        lineNumber: 174,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/booking-policies.tsx",
-                                lineNumber: 138,
+                                lineNumber: 172,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2295,25 +2337,25 @@ function BookingPolicies() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/booking-policies.tsx",
-                                        lineNumber: 149,
+                                        lineNumber: 183,
                                         columnNumber: 15
                                     }, this),
                                     "Editar"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/booking-policies.tsx",
-                                lineNumber: 148,
+                                lineNumber: 182,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/booking-policies.tsx",
-                        lineNumber: 137,
+                        lineNumber: 171,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/booking-policies.tsx",
-                    lineNumber: 136,
+                    lineNumber: 170,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2327,36 +2369,36 @@ function BookingPolicies() {
                                     children: "Intervalo para Cancelamento"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 156,
+                                    lineNumber: 190,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-2xl font-bold text-primary",
                                     children: [
-                                        savedConfig.intervaloCancelamentoHoras,
+                                        savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras,
                                         " horas"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 191,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     className: "text-sm text-muted-foreground",
                                     children: [
                                         "Clientes podem cancelar até ",
-                                        savedConfig.intervaloCancelamentoHoras,
+                                        savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras,
                                         " horas antes do horário agendado"
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 158,
+                                    lineNumber: 192,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 155,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2367,28 +2409,28 @@ function BookingPolicies() {
                                     children: "Mensagem de Lembrete"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 164,
+                                    lineNumber: 198,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-3 bg-muted/50 rounded-lg",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm whitespace-pre-wrap",
-                                        children: savedConfig.msgLembreteAtendimento
+                                        children: savedConfig.msgLembreteAtendimento || msgLembreteAtendimento
                                     }, void 0, false, {
                                         fileName: "[project]/components/booking-policies.tsx",
-                                        lineNumber: 166,
+                                        lineNumber: 200,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 165,
+                                    lineNumber: 199,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 163,
+                            lineNumber: 197,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2399,40 +2441,40 @@ function BookingPolicies() {
                                     children: "Mensagem Pós-Atendimento"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 171,
+                                    lineNumber: 205,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "p-3 bg-muted/50 rounded-lg",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "text-sm whitespace-pre-wrap",
-                                        children: savedConfig.msgPosAtendimento
+                                        children: savedConfig.msgPosAtendimento || msgPosAtendimento
                                     }, void 0, false, {
                                         fileName: "[project]/components/booking-policies.tsx",
-                                        lineNumber: 173,
+                                        lineNumber: 207,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 172,
+                                    lineNumber: 206,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 170,
+                            lineNumber: 204,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/booking-policies.tsx",
-                    lineNumber: 154,
+                    lineNumber: 188,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/booking-policies.tsx",
-            lineNumber: 135,
+            lineNumber: 169,
             columnNumber: 7
         }, this);
     }
@@ -2448,33 +2490,33 @@ function BookingPolicies() {
                                 className: "w-5 h-5 text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/booking-policies.tsx",
-                                lineNumber: 186,
+                                lineNumber: 220,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardTitle"], {
                                 children: "Políticas de Agendamento"
                             }, void 0, false, {
                                 fileName: "[project]/components/booking-policies.tsx",
-                                lineNumber: 187,
+                                lineNumber: 221,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/booking-policies.tsx",
-                        lineNumber: 185,
+                        lineNumber: 219,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "Configure regras e mensagens automáticas para seus agendamentos"
                     }, void 0, false, {
                         fileName: "[project]/components/booking-policies.tsx",
-                        lineNumber: 189,
+                        lineNumber: 223,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/booking-policies.tsx",
-                lineNumber: 184,
+                lineNumber: 218,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2490,7 +2532,7 @@ function BookingPolicies() {
                                     children: "Intervalo para Cancelamento (horas antes do agendamento)"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 194,
+                                    lineNumber: 228,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Input"], {
@@ -2504,7 +2546,7 @@ function BookingPolicies() {
                                     className: "max-w-xs"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 231,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2512,13 +2554,13 @@ function BookingPolicies() {
                                     children: "Mínimo 1 hora, máximo 72 horas. Clientes só poderão cancelar dentro deste prazo."
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 207,
+                                    lineNumber: 241,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 193,
+                            lineNumber: 227,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2529,7 +2571,7 @@ function BookingPolicies() {
                                     children: "Mensagem de Lembrete de Atendimento"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 213,
+                                    lineNumber: 247,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -2542,7 +2584,7 @@ function BookingPolicies() {
                                     maxLength: 500
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 214,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2554,13 +2596,13 @@ function BookingPolicies() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 223,
+                                    lineNumber: 257,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 212,
+                            lineNumber: 246,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2571,7 +2613,7 @@ function BookingPolicies() {
                                     children: "Mensagem Pós-Atendimento"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 229,
+                                    lineNumber: 263,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -2584,7 +2626,7 @@ function BookingPolicies() {
                                     maxLength: 500
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 230,
+                                    lineNumber: 264,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2596,13 +2638,13 @@ function BookingPolicies() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 239,
+                                    lineNumber: 273,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 228,
+                            lineNumber: 262,
                             columnNumber: 11
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2610,7 +2652,7 @@ function BookingPolicies() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 245,
+                            lineNumber: 279,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2622,7 +2664,7 @@ function BookingPolicies() {
                                     children: isLoading ? "Salvando..." : isSaved ? "Atualizar Políticas" : "Salvar Políticas"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 251,
+                                    lineNumber: 285,
                                     columnNumber: 13
                                 }, this),
                                 isSaved && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2633,30 +2675,30 @@ function BookingPolicies() {
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/components/booking-policies.tsx",
-                                    lineNumber: 256,
+                                    lineNumber: 290,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/booking-policies.tsx",
-                            lineNumber: 250,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/booking-policies.tsx",
-                    lineNumber: 192,
+                    lineNumber: 226,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/booking-policies.tsx",
-                lineNumber: 191,
+                lineNumber: 225,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/booking-policies.tsx",
-        lineNumber: 183,
+        lineNumber: 217,
         columnNumber: 5
     }, this);
 }
@@ -2719,23 +2761,28 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 ;
 ;
 ;
-function ProfileConfig() {
+function ProfileConfig({ initialDescricao }) {
     const [descricao, setDescricao] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [descricaoSalva, setDescricaoSalva] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [error, setError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [isEditMode, setIsEditMode] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
     const [isSaved, setIsSaved] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(false);
-    // Verifica no localStorage se já foi salvo
+    // Inicializa com os dados do backend
     (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
-        const saved = localStorage.getItem('profissional_descricao_salva');
-        if (saved === 'true') {
+        if (initialDescricao) {
+            console.log('🔍 DEBUG: Inicializando ProfileConfig com descrição:', initialDescricao);
+            setDescricao(initialDescricao);
+            setDescricaoSalva(initialDescricao);
             setIsSaved(true);
             setIsEditMode(false);
         } else {
+            console.log('🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição');
             setIsEditMode(true);
         }
-    }, []);
+    }, [
+        initialDescricao
+    ]);
     const handleSubmit = async (e)=>{
         e.preventDefault();
         setError("");
@@ -2751,8 +2798,6 @@ function ProfileConfig() {
             setDescricaoSalva(descricao.trim());
             setIsSaved(true);
             setIsEditMode(false);
-            // Salva flag no localStorage
-            localStorage.setItem('profissional_descricao_salva', 'true');
             console.log('✅ Cadastro profissional finalizado com sucesso!');
         } catch (err) {
             const apiError = err;
@@ -2794,26 +2839,26 @@ function ProfileConfig() {
                                                 className: "w-5 h-5 text-green-600"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/profile-config.tsx",
-                                                lineNumber: 91,
+                                                lineNumber: 95,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/profile-config.tsx",
-                                        lineNumber: 89,
+                                        lineNumber: 93,
                                         columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                                         children: "Descrição profissional cadastrada"
                                     }, void 0, false, {
                                         fileName: "[project]/components/profile-config.tsx",
-                                        lineNumber: 93,
+                                        lineNumber: 97,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/profile-config.tsx",
-                                lineNumber: 88,
+                                lineNumber: 92,
                                 columnNumber: 13
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2825,25 +2870,25 @@ function ProfileConfig() {
                                         className: "w-4 h-4 mr-2"
                                     }, void 0, false, {
                                         fileName: "[project]/components/profile-config.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 102,
                                         columnNumber: 15
                                     }, this),
                                     "Editar"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/profile-config.tsx",
-                                lineNumber: 97,
+                                lineNumber: 101,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/profile-config.tsx",
-                        lineNumber: 87,
+                        lineNumber: 91,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/profile-config.tsx",
-                    lineNumber: 86,
+                    lineNumber: 90,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2854,23 +2899,23 @@ function ProfileConfig() {
                             children: descricaoSalva
                         }, void 0, false, {
                             fileName: "[project]/components/profile-config.tsx",
-                            lineNumber: 105,
+                            lineNumber: 109,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/components/profile-config.tsx",
-                        lineNumber: 104,
+                        lineNumber: 108,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "[project]/components/profile-config.tsx",
-                    lineNumber: 103,
+                    lineNumber: 107,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/profile-config.tsx",
-            lineNumber: 85,
+            lineNumber: 89,
             columnNumber: 7
         }, this);
     }
@@ -2883,20 +2928,20 @@ function ProfileConfig() {
                         children: "Perfil Profissional"
                     }, void 0, false, {
                         fileName: "[project]/components/profile-config.tsx",
-                        lineNumber: 116,
+                        lineNumber: 120,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "Conte um pouco sobre você e seu trabalho. Esta descrição será exibida para seus clientes."
                     }, void 0, false, {
                         fileName: "[project]/components/profile-config.tsx",
-                        lineNumber: 117,
+                        lineNumber: 121,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/profile-config.tsx",
-                lineNumber: 115,
+                lineNumber: 119,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -2912,7 +2957,7 @@ function ProfileConfig() {
                                     children: "Descrição Profissional"
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-config.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 128,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Textarea"], {
@@ -2924,7 +2969,7 @@ function ProfileConfig() {
                                     className: "resize-none"
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-config.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2932,13 +2977,13 @@ function ProfileConfig() {
                                     children: "Descreva sua experiência, especialidades e o que torna seu trabalho único"
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-config.tsx",
-                                    lineNumber: 133,
+                                    lineNumber: 137,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/profile-config.tsx",
-                            lineNumber: 123,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         error && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2946,7 +2991,7 @@ function ProfileConfig() {
                             children: error
                         }, void 0, false, {
                             fileName: "[project]/components/profile-config.tsx",
-                            lineNumber: 139,
+                            lineNumber: 143,
                             columnNumber: 13
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2958,7 +3003,7 @@ function ProfileConfig() {
                                     children: isLoading ? "Salvando..." : isSaved ? "Atualizar Descrição" : "Salvar Descrição"
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-config.tsx",
-                                    lineNumber: 145,
+                                    lineNumber: 149,
                                     columnNumber: 13
                                 }, this),
                                 isSaved && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -2969,34 +3014,188 @@ function ProfileConfig() {
                                     children: "Cancelar"
                                 }, void 0, false, {
                                     fileName: "[project]/components/profile-config.tsx",
-                                    lineNumber: 150,
+                                    lineNumber: 154,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/profile-config.tsx",
-                            lineNumber: 144,
+                            lineNumber: 148,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/profile-config.tsx",
-                    lineNumber: 122,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/components/profile-config.tsx",
-                lineNumber: 121,
+                lineNumber: 125,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/profile-config.tsx",
-        lineNumber: 114,
+        lineNumber: 118,
+        columnNumber: 5
+    }, this);
+}
+}),
+"[project]/app/dashboard/configuracoes/page.tsx [app-ssr] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>ConfiguracoesPage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$working$2d$hours$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/working-hours-config.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$services$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/services-config.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$booking$2d$policies$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/booking-policies.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$profile$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/profile-config.tsx [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$profissional$2d$service$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/services/profissional-service.ts [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-ssr] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function ConfiguracoesPage() {
+    const [profissionalData, setProfissionalData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
+    const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useToast"])();
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        const carregarDadosProfissional = async ()=>{
+            setIsLoading(true);
+            try {
+                const dados = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$profissional$2d$service$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["profissionalService"].obterProfissional();
+                console.log('✅ Dados do profissional carregados com sucesso');
+                setProfissionalData(dados);
+            } catch (error) {
+                console.error('❌ Erro ao carregar dados do profissional:', error);
+                toast({
+                    title: "Erro ao carregar configurações",
+                    description: error.message || "Não foi possível carregar suas configurações. Tente recarregar a página.",
+                    variant: "destructive"
+                });
+            } finally{
+                setIsLoading(false);
+            }
+        };
+        carregarDadosProfissional();
+    }, [
+        toast
+    ]);
+    if (isLoading) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "space-y-8",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                            className: "text-3xl font-bold text-balance",
+                            children: "Configurações"
+                        }, void 0, false, {
+                            fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                            lineNumber: 42,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-muted-foreground",
+                            children: "Gerencie seu perfil, expediente, serviços e políticas"
+                        }, void 0, false, {
+                            fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                    className: "text-center text-muted-foreground py-8",
+                    children: "Carregando configurações..."
+                }, void 0, false, {
+                    fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                    lineNumber: 45,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+            lineNumber: 40,
+            columnNumber: 7
+        }, this);
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "space-y-8",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: "text-3xl font-bold text-balance",
+                        children: "Configurações"
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                        lineNumber: 53,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-muted-foreground",
+                        children: "Gerencie seu perfil, expediente, serviços e políticas"
+                    }, void 0, false, {
+                        fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                lineNumber: 52,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$profile$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProfileConfig"], {
+                initialDescricao: profissionalData?.descricao ?? undefined
+            }, void 0, false, {
+                fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                lineNumber: 57,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$working$2d$hours$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WorkingHoursConfig"], {
+                initialHorarios: profissionalData?.horarios ?? []
+            }, void 0, false, {
+                fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                lineNumber: 58,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$services$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ServicesConfig"], {}, void 0, false, {
+                fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                lineNumber: 59,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$booking$2d$policies$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BookingPolicies"], {
+                initialConfiguracao: profissionalData?.configuracao && Object.keys(profissionalData.configuracao).length > 0 ? profissionalData.configuracao : undefined
+            }, void 0, false, {
+                fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+                lineNumber: 60,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/app/dashboard/configuracoes/page.tsx",
+        lineNumber: 51,
         columnNumber: 5
     }, this);
 }
 }),
 ];
 
-//# sourceMappingURL=_491b86d9._.js.map
+//# sourceMappingURL=_1764436c._.js.map

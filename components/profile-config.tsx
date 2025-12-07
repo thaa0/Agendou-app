@@ -9,7 +9,11 @@ import { profissionalService } from "@/lib/services/profissional-service"
 import type { ApiError } from "@/lib/services/auth-service"
 import { Edit2, Check } from "lucide-react"
 
-export function ProfileConfig() {
+interface ProfileConfigProps {
+  initialDescricao?: string
+}
+
+export function ProfileConfig({ initialDescricao }: ProfileConfigProps) {
   const [descricao, setDescricao] = useState("")
   const [descricaoSalva, setDescricaoSalva] = useState("")
   const [isLoading, setIsLoading] = useState(false)
@@ -17,16 +21,19 @@ export function ProfileConfig() {
   const [isEditMode, setIsEditMode] = useState(false)
   const [isSaved, setIsSaved] = useState(false)
 
-  // Verifica no localStorage se já foi salvo
+  // Inicializa com os dados do backend
   useEffect(() => {
-    const saved = localStorage.getItem('profissional_descricao_salva')
-    if (saved === 'true') {
+    if (initialDescricao) {
+      console.log('🔍 DEBUG: Inicializando ProfileConfig com descrição:', initialDescricao)
+      setDescricao(initialDescricao)
+      setDescricaoSalva(initialDescricao)
       setIsSaved(true)
       setIsEditMode(false)
     } else {
+      console.log('🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição')
       setIsEditMode(true)
     }
-  }, [])
+  }, [initialDescricao])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -47,9 +54,6 @@ export function ProfileConfig() {
       setDescricaoSalva(descricao.trim())
       setIsSaved(true)
       setIsEditMode(false)
-      
-      // Salva flag no localStorage
-      localStorage.setItem('profissional_descricao_salva', 'true')
       
       console.log('✅ Cadastro profissional finalizado com sucesso!')
     } catch (err) {

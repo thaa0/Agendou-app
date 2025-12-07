@@ -9,8 +9,13 @@ import { Button } from "@/components/ui/button"
 import { ShieldCheck, Edit2, Check } from "lucide-react"
 import { configuracaoService } from "@/lib/services/configuracao-service"
 import type { ApiError } from "@/lib/services/auth-service"
+import type { Configuracao } from "@/lib/services/profissional-service"
 
-export function BookingPolicies() {
+interface BookingPoliciesProps {
+  initialConfiguracao?: Configuracao
+}
+
+export function BookingPolicies({ initialConfiguracao }: BookingPoliciesProps) {
   const [intervaloCancelamentoHoras, setIntervaloCancelamentoHoras] = useState("6")
   const [msgLembreteAtendimento, setMsgLembreteAtendimento] = useState("")
   const [msgPosAtendimento, setMsgPosAtendimento] = useState("")
@@ -27,16 +32,38 @@ export function BookingPolicies() {
     msgPosAtendimento: "",
   })
 
-  // Verifica no localStorage se já foi salvo
+  // Inicializa com os dados do backend
   useEffect(() => {
-    const saved = localStorage.getItem('configuracao_politicas_salva')
-    if (saved === 'true') {
+    // Verifica se initialConfiguracao existe e não é um objeto vazio
+    const isValidConfig = initialConfiguracao && 
+        Object.keys(initialConfiguracao).length > 0 &&
+        initialConfiguracao.intervaloCancelamentoHoras !== undefined &&
+        initialConfiguracao.msgLembreteAtendimento !== undefined &&
+        initialConfiguracao.msgPosAtendimento !== undefined
+    
+    if (isValidConfig) {
+      console.log('✅ Políticas carregadas do backend')
+      
+      const intervalo = initialConfiguracao.intervaloCancelamentoHoras.toString()
+      const msgLembrete = initialConfiguracao.msgLembreteAtendimento
+      const msgPos = initialConfiguracao.msgPosAtendimento
+      
+      setIntervaloCancelamentoHoras(intervalo)
+      setMsgLembreteAtendimento(msgLembrete)
+      setMsgPosAtendimento(msgPos)
+      
+      setSavedConfig({
+        intervaloCancelamentoHoras: intervalo,
+        msgLembreteAtendimento: msgLembrete,
+        msgPosAtendimento: msgPos,
+      })
+      
       setIsSaved(true)
       setIsEditMode(false)
     } else {
       setIsEditMode(true)
     }
-  }, [])
+  }, [initialConfiguracao])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -94,9 +121,6 @@ export function BookingPolicies() {
       setIsSaved(true)
       setIsEditMode(false)
       
-      // Salva flag no localStorage
-      localStorage.setItem('configuracao_politicas_salva', 'true')
-      
       console.log('✅ Políticas configuradas com sucesso!')
     } catch (err) {
       const apiError = err as ApiError
@@ -114,17 +138,27 @@ export function BookingPolicies() {
   }
 
   const handleEdit = () => {
-    setIntervaloCancelamentoHoras(savedConfig.intervaloCancelamentoHoras)
-    setMsgLembreteAtendimento(savedConfig.msgLembreteAtendimento)
-    setMsgPosAtendimento(savedConfig.msgPosAtendimento)
+    // Usa os valores atuais salvos (ou do initialConfiguracao)
+    const intervaloAtual = savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras
+    const msgLembreteAtual = savedConfig.msgLembreteAtendimento || msgLembreteAtendimento
+    const msgPosAtual = savedConfig.msgPosAtendimento || msgPosAtendimento
+    
+    setIntervaloCancelamentoHoras(intervaloAtual)
+    setMsgLembreteAtendimento(msgLembreteAtual)
+    setMsgPosAtendimento(msgPosAtual)
     setIsEditMode(true)
     setError("")
   }
 
   const handleCancel = () => {
-    setIntervaloCancelamentoHoras(savedConfig.intervaloCancelamentoHoras)
-    setMsgLembreteAtendimento(savedConfig.msgLembreteAtendimento)
-    setMsgPosAtendimento(savedConfig.msgPosAtendimento)
+    // Restaura os valores salvos (ou do initialConfiguracao)
+    const intervaloAtual = savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras
+    const msgLembreteAtual = savedConfig.msgLembreteAtendimento || msgLembreteAtendimento
+    const msgPosAtual = savedConfig.msgPosAtendimento || msgPosAtendimento
+    
+    setIntervaloCancelamentoHoras(intervaloAtual)
+    setMsgLembreteAtendimento(msgLembreteAtual)
+    setMsgPosAtendimento(msgPosAtual)
     setIsEditMode(false)
     setError("")
   }
@@ -154,23 +188,23 @@ export function BookingPolicies() {
         <CardContent className="space-y-4">
           <div className="space-y-2">
             <Label className="text-sm font-medium">Intervalo para Cancelamento</Label>
-            <p className="text-2xl font-bold text-primary">{savedConfig.intervaloCancelamentoHoras} horas</p>
+            <p className="text-2xl font-bold text-primary">{savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras} horas</p>
             <p className="text-sm text-muted-foreground">
-              Clientes podem cancelar até {savedConfig.intervaloCancelamentoHoras} horas antes do horário agendado
+              Clientes podem cancelar até {savedConfig.intervaloCancelamentoHoras || intervaloCancelamentoHoras} horas antes do horário agendado
             </p>
           </div>
           
           <div className="space-y-2">
             <Label className="text-sm font-medium">Mensagem de Lembrete</Label>
             <div className="p-3 bg-muted/50 rounded-lg">
-              <p className="text-sm whitespace-pre-wrap">{savedConfig.msgLembreteAtendimento}</p>
+              <p className="text-sm whitespace-pre-wrap">{savedConfig.msgLembreteAtendimento || msgLembreteAtendimento}</p>
             </div>
           </div>
           
           <div className="space-y-2">
             <Label className="text-sm font-medium">Mensagem Pós-Atendimento</Label>
             <div className="p-3 bg-muted/50 rounded-lg">
-              <p className="text-sm whitespace-pre-wrap">{savedConfig.msgPosAtendimento}</p>
+              <p className="text-sm whitespace-pre-wrap">{savedConfig.msgPosAtendimento || msgPosAtendimento}</p>
             </div>
           </div>
         </CardContent>

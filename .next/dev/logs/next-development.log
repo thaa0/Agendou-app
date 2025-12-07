@@ -101,3 +101,650 @@
 [00:15:17.549] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard/configuracoes","route":"/dashboard/configuracoes"}
 [00:15:17.549] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133588405}
 [00:16:11.809] Server  LOG      ✓ Compiled in 0ms
+[00:17:10.876] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133701698}
+[00:17:20.381] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:17:20.381] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:17:20.381] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:17:20.381] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:17:20.381] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:17:20.381] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:17:20.381] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133711147}
+[00:17:20.381] Browser LOG     🔒 Status da resposta: 200
+[00:17:20.381] Browser LOG     🔒 Status da resposta: 200
+[00:17:20.381] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:17:20.381] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:17:20.381] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:17:20.381] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:19:13.971] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133824837}
+[00:19:21.694] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133832523}
+[00:19:24.789] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133835640}
+[00:19:28.648] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:19:28.648] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:19:28.648] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:19:28.648] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:19:28.648] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:19:28.648] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:19:28.648] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133839448}
+[00:19:28.648] Browser LOG     🔒 Status da resposta: 200
+[00:19:28.648] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:19:28.648] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:19:28.648] Browser LOG     🔒 Status da resposta: 200
+[00:19:28.648] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:19:28.648] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:47:26.289] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:47:26.555] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:47:26.555] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:47:26.555] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:47:26.555] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:47:26.555] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard/configuracoes","route":"/dashboard/configuracoes"}
+[00:47:26.555] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135517426}
+[00:47:26.720] Browser LOG     🔒 Status da resposta: 200
+[00:47:26.720] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:47:26.720] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:47:33.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135523938}
+[00:47:46.630] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
+[00:47:46.630] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
+[00:47:46.906] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 401
+[00:47:46.906] Browser LOG     🔍 DEBUG LOGIN - Erro do backend: {"description":"CREDENCIAL ERROR!","message":"USUARIO OU SENHA ESTÃO INVÁLIDOS"}
+[00:47:46.906] Browser LOG     🔍 DEBUG LOGIN - Erro capturado: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
+[00:47:46.906] Browser ERROR   ❌ Erro no login: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
+[00:47:51.526] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
+[00:47:51.526] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
+[00:47:51.739] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 200
+[00:47:51.739] Browser LOG     🔍 DEBUG LOGIN - Token recebido: {"tipo":"Bearer","token":"eyJhbGciOiJIUzI1NiJ9...","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[00:47:51.739] Browser LOG     ✅ Login realizado com sucesso! {"tipo":"Bearer","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[00:47:51.889] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135542755}
+[00:49:58.412] Server  LOG      ✓ Compiled in 91ms
+[00:50:17.705] Server  LOG      ✓ Compiled in 85ms
+[00:50:36.883] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:50:36.883] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:50:36.883] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:50:36.883] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:50:36.883] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:50:36.883] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:50:36.883] Browser LOG     🔒 Status da resposta: 200
+[00:50:36.883] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:50:36.883] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:50:36.883] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:50:36.883] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:50:36.883] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:50:36.883] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:50:36.883] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:50:36.883] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:50:36.884] Browser LOG     🔒 Status da resposta: 200
+[00:50:36.884] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:50:36.884] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:50:36.884] Browser LOG     🔒 Status da resposta: 200
+[00:50:36.884] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:50:36.884] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:50:36.884] Browser LOG     🔒 Status da resposta: 200
+[00:50:36.884] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:50:36.884] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:50:54.662] Server  LOG      ✓ Compiled in 62ms
+[00:50:54.713] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [Sou nail designer artistica]
+[00:51:04.954] Server  LOG      ✓ Compiled in 36ms
+[00:51:25.391] Server  LOG      ✓ Compiled in 84ms
+[00:51:25.440] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [[object Object]]
+[00:51:35.834] Server  LOG      ✓ Compiled in 43ms
+[00:52:00.750] Server  LOG      ✓ Compiled in 54ms
+[00:52:00.801] Browser ERROR   The final argument passed to %s changed size between renders. The order and size of this array must remain constant.
+
+Previous: %s
+Incoming: %s useEffect [] [[object Object]]
+[00:52:13.213] Server  LOG      ✓ Compiled in 57ms
+[00:53:00.622] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135851479}
+[00:53:01.607] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:53:01.607] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:53:01.607] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:53:01.607] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:53:01.607] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:53:01.607] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:53:01.607] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135852395}
+[00:53:01.608] Browser LOG     🔒 Status da resposta: 200
+[00:53:01.608] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:01.608] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:53:01.608] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:53:01.608] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:53:01.608] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando BookingPolicies com configuração: {}
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:53:01.608] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:53:01.608] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:53:01.608] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando BookingPolicies com configuração: {}
+[00:53:01.608] Browser LOG     🔒 Status da resposta: 200
+[00:53:01.608] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:01.608] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:53:01.608] Browser LOG     🔍 DEBUG: Inicializando BookingPolicies com configuração: {}
+[00:53:01.608] Browser LOG     🔒 Status da resposta: 200
+[00:53:01.608] Browser LOG     🔒 Status da resposta: 200
+[00:53:01.608] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:01.608] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:01.608] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:01.608] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:21.462] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"OLá","msgPosAtendimento":"Tchau"}
+[00:53:21.462] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[00:53:21.590] Browser LOG     🔒 Status da resposta: 200
+[00:53:21.590] Browser LOG     ✅ Políticas configuradas com sucesso!
+[00:53:24.233] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135875093}
+[00:53:24.996] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:53:24.996] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:53:24.996] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:53:24.996] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:53:24.996] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:53:24.996] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:53:24.996] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135875782}
+[00:53:24.996] Browser LOG     🔒 Status da resposta: 200
+[00:53:24.996] Browser LOG     🔒 Status da resposta: 200
+[00:53:24.996] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:24.996] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:24.996] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:24.996] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:53:24.996] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:53:24.996] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:53:24.996] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando BookingPolicies com configuração: {}
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:53:24.996] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:53:24.996] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:53:24.996] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:53:24.996] Browser LOG     🔍 DEBUG: Inicializando BookingPolicies com configuração: {}
+[00:53:24.996] Browser LOG     🔒 Status da resposta: 200
+[00:53:24.996] Browser LOG     🔒 Status da resposta: 200
+[00:53:24.996] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:24.996] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:24.996] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:53:24.996] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:54:15.335] Server  LOG      ✓ Compiled in 41ms
+[00:54:35.282] Server  LOG      ✓ Compiled in 42ms
+[00:54:35.361] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"","msgPosAtendimento":""}
+[00:54:35.361] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"","msgPosAtendimento":""}
+[00:55:16.468] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135987326}
+[00:55:17.378] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:55:17.378] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:55:17.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:55:17.378] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:55:17.378] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:55:17.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:55:17.378] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135988166}
+[00:55:17.378] Browser LOG     🔒 Status da resposta: 200
+[00:55:17.378] Browser LOG     🔒 Status da resposta: 200
+[00:55:17.378] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:17.378] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:17.378] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:17.378] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:17.378] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:55:17.378] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:55:17.378] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:55:17.378] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:55:17.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:55:17.378] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:55:17.378] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:55:17.378] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:55:17.378] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:55:17.378] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:55:17.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:55:17.378] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:55:17.378] Browser LOG     🔒 Status da resposta: 200
+[00:55:17.378] Browser LOG     🔒 Status da resposta: 200
+[00:55:17.378] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:17.378] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:17.378] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:17.378] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:26.877] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"Olá","msgPosAtendimento":"Tchau"}
+[00:55:26.877] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[00:55:26.877] Browser LOG     🔒 Status da resposta: 200
+[00:55:26.877] Browser LOG     ✅ Políticas configuradas com sucesso!
+[00:55:26.877] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"Olá","msgPosAtendimento":"Tchau"}
+[00:55:26.877] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"Olá","msgPosAtendimento":"Tchau"}
+[00:55:29.137] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765135999993}
+[00:55:29.935] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:55:29.935] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:55:29.935] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:55:29.935] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:55:29.935] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:55:29.935] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:55:29.935] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136000739}
+[00:55:29.935] Browser LOG     🔒 Status da resposta: 200
+[00:55:29.935] Browser LOG     🔒 Status da resposta: 200
+[00:55:29.935] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:29.935] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:29.935] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:55:29.935] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:55:29.935] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:55:29.935] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:55:29.935] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:55:29.936] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:55:29.936] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:55:29.936] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:55:29.936] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:55:29.936] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:55:29.936] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:55:29.936] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:55:29.936] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:29.936] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:55:29.936] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:55:29.936] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:55:29.936] Browser LOG     🔒 Status da resposta: 200
+[00:55:29.936] Browser LOG     🔒 Status da resposta: 200
+[00:55:29.936] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:29.936] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:29.936] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:55:29.936] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:56:26.117] Server  LOG      ✓ Compiled in 63ms
+[00:56:55.042] Server  LOG      ✓ Compiled in 42ms
+[00:57:14.535] Server  LOG      ✓ Compiled in 61ms
+[00:58:03.465] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136154318}
+[00:58:04.377] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:58:04.377] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:58:04.377] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:58:04.377] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:58:04.377] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:58:04.377] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:58:04.377] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136155175}
+[00:58:04.377] Browser LOG     🔒 Status da resposta: 200
+[00:58:04.377] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:04.377] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:04.377] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[00:58:04.377] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:58:04.377] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:04.377] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:58:04.377] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:58:04.377] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:58:04.377] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:04.377] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:58:04.377] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:04.377] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:58:04.377] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:58:04.377] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:58:04.377] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:04.377] Browser LOG     🔒 Status da resposta: 200
+[00:58:04.377] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:04.377] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:04.377] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[00:58:04.377] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:04.377] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:04.377] Browser LOG     🔒 Status da resposta: 200
+[00:58:04.377] Browser LOG     🔒 Status da resposta: 200
+[00:58:04.377] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:04.377] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:04.377] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:04.377] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:11.828] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"}
+[00:58:11.829] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[00:58:11.829] Browser LOG     🔒 Status da resposta: 200
+[00:58:11.829] Browser LOG     ✅ Políticas configuradas com sucesso!
+[00:58:11.829] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"}
+[00:58:11.829] Browser LOG     🔍 DEBUG: Renderizando modo visualização com savedConfig: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"}
+[00:58:14.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136165248}
+[00:58:15.192] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:58:15.192] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:58:15.192] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:58:15.192] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[00:58:15.192] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[00:58:15.192] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[00:58:15.192] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136165980}
+[00:58:15.192] Browser LOG     🔒 Status da resposta: 200
+[00:58:15.192] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:15.192] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:15.192] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[00:58:15.192] Browser LOG     🔒 Status da resposta: 200
+[00:58:15.192] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:58:15.192] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:15.192] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:58:15.192] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:58:15.192] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:58:15.192] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:15.192] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[00:58:15.192] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:15.192] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:58:15.192] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:58:15.192] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:58:15.192] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:15.192] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:15.192] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[00:58:15.192] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[00:58:15.192] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[00:58:15.192] Browser LOG     🔍 DEBUG: Nenhuma configuração encontrada, entrando em modo de edição
+[00:58:15.192] Browser LOG     🔒 Status da resposta: 200
+[00:58:15.192] Browser LOG     🔒 Status da resposta: 200
+[00:58:15.192] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:15.192] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:15.192] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:58:15.192] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:59:14.506] Server  LOG      ✓ Compiled in 41ms
+[00:59:33.373] Server  LOG      ✓ Compiled in 62ms
+[00:59:48.365] Server  LOG      ✓ Compiled in 51ms
+[01:00:03.332] Server  LOG      ✓ Compiled in 63ms
+[01:00:04.332] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:04.333] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:04.333] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:04.333] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:04.333] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:04.333] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:15.886] Server  LOG      ✓ Compiled in 57ms
+[01:00:16.887] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:16.888] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:16.888] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:16.888] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:16.888] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:16.888] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:16.888] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:16.888] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:16.888] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:16.888] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:59.044] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136329902}
+[01:00:59.909] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:00:59.909] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:00:59.909] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:00:59.909] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:00:59.909] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:00:59.909] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:00:59.909] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136330709}
+[01:00:59.909] Browser LOG     🔒 Status da resposta: 200
+[01:00:59.909] Browser LOG     🔒 Status da resposta: 200
+[01:00:59.909] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:00:59.909] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:00:59.909] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:00:59.909] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:00:59.909] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:00:59.909] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:00:59.909] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:59.910] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:59.910] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:00:59.910] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:59.910] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:59.910] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:59.910] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:59.910] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:00:59.910] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:59.910] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:59.910] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:00:59.910] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:00:59.910] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:00:59.910] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:00:59.910] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: {}
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: object
+[01:00:59.910] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:00:59.910] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":true,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false}
+[01:00:59.910] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:00:59.910] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:00:59.910] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:00:59.910] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:00:59.910] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: {}
+[01:00:59.910] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: object
+[01:00:59.910] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:00:59.910] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":true,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false}
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:59.911] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:59.911] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:00:59.911] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:00:59.911] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:00:59.911] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:00:59.911] Browser LOG     🔒 Status da resposta: 200
+[01:00:59.911] Browser LOG     🔒 Status da resposta: 200
+[01:00:59.911] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:00:59.911] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:00:59.911] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:00:59.911] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:02:27.433] Server  LOG      ✓ Compiled in 50ms
+[01:02:28.423] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:02:28.423] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:02:28.423] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:02:28.423] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:02:28.423] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:02:28.423] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:02:28.423] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:02:28.424] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:02:28.424] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:02:28.424] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:02:48.286] Server  LOG      ✓ Compiled in 53ms
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:02:49.361] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:02:49.361] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: {}
+[01:02:49.361] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:02:49.361] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:02:49.361] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:02.834] Server  LOG      ✓ Compiled in 49ms
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:03.827] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:03.827] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:03.827] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:03.827] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:03.827] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:03.827] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:03:03.827] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: undefined
+[01:03:03.827] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: undefined
+[01:03:03.827] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:03:03.827] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":false,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false,"isEmptyObject":false}
+[01:03:42.793] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136493635}
+[01:03:44.158] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:03:44.158] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:03:44.158] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:03:44.158] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:03:44.158] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:03:44.158] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:03:44.158] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136494827}
+[01:03:44.158] Browser LOG     🔒 Status da resposta: 200
+[01:03:44.158] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Tipo de configuracao: object
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuracao é null? false
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuracao é objeto vazio? true
+[01:03:44.158] Browser LOG     ✅ DEBUG: Keys da configuracao: []
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:03:44.158] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:03:44.158] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:03:44.158] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:03:44.158] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: undefined
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:03:44.158] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":false,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false,"isEmptyObject":false}
+[01:03:44.158] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:03:44.158] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:03:44.158] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:03:44.158] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:03:44.158] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: undefined
+[01:03:44.158] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:03:44.158] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":false,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false,"isEmptyObject":false}
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🔒 Status da resposta: 200
+[01:03:44.158] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:03:44.158] Browser LOG     ✅ DEBUG: Tipo de configuracao: object
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuracao é null? false
+[01:03:44.158] Browser LOG     ✅ DEBUG: Configuracao é objeto vazio? true
+[01:03:44.158] Browser LOG     ✅ DEBUG: Keys da configuracao: []
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:03:44.158] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:03:44.158] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:03:44.158] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:03:44.158] Browser LOG     🔒 Status da resposta: 200
+[01:03:44.158] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:03:44.158] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:03:44.158] Browser LOG     🔒 Status da resposta: 200
+[01:03:44.158] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:03:44.158] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:05:20.982] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136591828}
+[01:05:21.948] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:05:21.948] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:05:21.948] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:05:21.948] Browser LOG     🔍 DEBUG: Carregando dados do profissional
+[01:05:21.948] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:05:21.948] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:05:21.948] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765136592658}
+[01:05:21.949] Browser LOG     🔒 Status da resposta: 200
+[01:05:21.949] Browser LOG     🔒 Status da resposta: 200
+[01:05:21.949] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Tipo de configuracao: object
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuracao é null? false
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuracao é objeto vazio? true
+[01:05:21.949] Browser LOG     ✅ DEBUG: Keys da configuracao: []
+[01:05:21.949] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Dados do profissional carregados: {"configuracao":{},"descricao":"Sou nail designer artistica","horarios":[{}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"accountNonExpired":true,"accountNonLocked":true,"authorities":[],"credentialsNonExpired":true,"email":"nanda1510@gmail.com","enabled":true,"id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","momentoCriacao":"2025-12-07T14:43:26.523079","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","password":"$2a$10$hFw5fC7f5QtLmyiYX8vnyev/tzYZQXBYj2DaQGjM5xGGOV8KTyJuW","tipo":"FREE","username":"nanda1510@gmail.com","whatsapp":"5573988805168"}}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuração específica: {}
+[01:05:21.949] Browser LOG     ✅ DEBUG: Tipo de configuracao: object
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuracao é null? false
+[01:05:21.949] Browser LOG     ✅ DEBUG: Configuracao é objeto vazio? true
+[01:05:21.949] Browser LOG     ✅ DEBUG: Keys da configuracao: []
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:05:21.949] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:05:21.949] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: false
+[01:05:21.949] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:05:21.949] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:05:21.949] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:05:21.949] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:05:21.949] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:05:21.949] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:05:21.949] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: undefined
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: undefined
+[01:05:21.949] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:05:21.949] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":false,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false,"isEmptyObject":false}
+[01:05:21.949] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:05:21.949] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{}]
+[01:05:21.949] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:05:21.949] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:05:21.949] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: useEffect disparado
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: initialConfiguracao recebida: undefined
+[01:05:21.949] Browser LOG     🔍 DEBUG BookingPolicies: typeof initialConfiguracao: undefined
+[01:05:21.949] Browser LOG     ⚠️ DEBUG BookingPolicies: Configuração inválida ou vazia
+[01:05:21.949] Browser LOG     ⚠️ DEBUG BookingPolicies: Detalhes: {"hasConfiguracao":false,"hasIntervalo":false,"hasMsgLembrete":false,"hasMsgPos":false,"isEmptyObject":false}
+[01:05:21.949] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:05:21.950] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:05:21.950] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:05:21.950] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:05:21.950] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:05:21.950] Browser LOG     🎬 DEBUG BookingPolicies: Componente renderizado/re-renderizado
+[01:05:21.950] Browser LOG     🎬 DEBUG BookingPolicies: Props recebidas - initialConfiguracao: undefined
+[01:05:21.950] Browser LOG     🎬 DEBUG BookingPolicies: Estados atuais - isSaved: false isEditMode: true
+[01:05:21.950] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:05:21.950] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:05:21.950] Browser LOG     🔒 Status da resposta: 200
+[01:05:21.950] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:05:21.950] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:05:21.950] Browser LOG     🔒 Status da resposta: 200
+[01:05:21.950] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:05:21.950] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:11:02.299] Server  LOG      ✓ Compiled in 60ms
+[01:11:02.387] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:02.387] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:02.387] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:02.387] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:19.604] Server  LOG      ✓ Compiled in 71ms
+[01:11:19.687] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:19.687] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:19.687] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:19.687] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:29.547] Server  LOG      ✓ Compiled in 51ms
+[01:11:29.629] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:29.629] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:29.629] Browser LOG     ✏️ DEBUG BookingPolicies: RENDERIZANDO MODO EDIÇÃO/CRIAÇÃO
+[01:11:29.629] Browser LOG     ✏️ DEBUG BookingPolicies: Valores dos campos: {"intervaloCancelamentoHoras":"6","msgLembreteAtendimento":"...","msgPosAtendimento":"..."}
+[01:11:37.691] Server  LOG      ✓ Compiled in 50ms
+[01:11:48.594] Server  LOG      ✓ Compiled in 65ms
+[01:11:54.862] Server  LOG      ✓ Compiled in 48ms
+[01:12:19.046] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137009889}
+[01:12:20.401] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:12:20.401] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:12:20.401] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:12:20.401] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:12:20.401] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137011067}
+[01:12:20.401] Browser LOG     🔒 Status da resposta: 200
+[01:12:20.401] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:12:20.401] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:12:20.401] Browser LOG     🔒 Status da resposta: 200
+[01:12:20.401] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:12:20.401] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:12:20.401] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:12:20.401] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:12:20.401] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:12:20.401] Browser LOG     ✅ Políticas carregadas do backend
+[01:12:20.401] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:12:20.401] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:12:20.401] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:12:20.401] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:12:20.401] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:12:20.401] Browser LOG     ✅ Políticas carregadas do backend
+[01:12:20.401] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:12:20.401] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:12:20.401] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:12:20.401] Browser LOG     ✅ Políticas carregadas do backend
+[01:12:20.401] Browser LOG     🔒 Status da resposta: 200
+[01:12:20.401] Browser LOG     🔒 Status da resposta: 200
+[01:12:20.401] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:12:20.401] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:12:20.401] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:12:20.401] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:12:40.913] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137031765}

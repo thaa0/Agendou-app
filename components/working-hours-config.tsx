@@ -9,6 +9,7 @@ import { TimeInput } from "@/components/ui/time-input"
 import { Clock, Copy, Edit2, Check } from "lucide-react"
 import { agendaService } from "@/lib/services/agenda-service"
 import type { ApiError } from "@/lib/services/auth-service"
+import type { Horario } from "@/lib/services/profissional-service"
 
 interface DaySchedule {
   diaSemana: number
@@ -27,7 +28,11 @@ const diasSemana = [
   { id: 7, label: "Domingo", short: "Dom" },
 ]
 
-export function WorkingHoursConfig() {
+interface WorkingHoursConfigProps {
+  initialHorarios?: Horario[]
+}
+
+export function WorkingHoursConfig({ initialHorarios = [] }: WorkingHoursConfigProps) {
   const [horarios, setHorarios] = useState<DaySchedule[]>(
     diasSemana.map(dia => ({
       diaSemana: dia.id,
@@ -46,16 +51,40 @@ export function WorkingHoursConfig() {
   const [isSaved, setIsSaved] = useState(false)
   const [savedHorarios, setSavedHorarios] = useState<DaySchedule[]>([])
 
-  // Verifica no localStorage se já foi salvo
+  // Inicializa com os dados do backend
   useEffect(() => {
-    const saved = localStorage.getItem('agenda_horarios_salvos')
-    if (saved === 'true') {
+    if (initialHorarios && initialHorarios.length > 0) {
+      console.log('🔍 DEBUG: Inicializando WorkingHoursConfig com horários:', initialHorarios)
+      
+      const horariosCarregados = diasSemana.map(dia => {
+        const horarioBackend = initialHorarios.find(h => h.diaSemana === dia.id)
+        
+        if (horarioBackend) {
+          return {
+            diaSemana: dia.id,
+            horaInicio: horarioBackend.horaInicio || "09:00",
+            horaFim: horarioBackend.horaFim || "18:00",
+            ativo: horarioBackend.ativo ?? true,
+          }
+        }
+        
+        return {
+          diaSemana: dia.id,
+          horaInicio: "09:00",
+          horaFim: "18:00",
+          ativo: dia.id <= 5,
+        }
+      })
+      
+      setHorarios(horariosCarregados)
+      setSavedHorarios(horariosCarregados)
       setIsSaved(true)
       setIsEditMode(false)
     } else {
+      console.log('🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição')
       setIsEditMode(true)
     }
-  }, [])
+  }, [initialHorarios])
 
   const handleDayToggle = (diaSemana: number) => {
     setHorarios(prev =>
@@ -127,9 +156,7 @@ export function WorkingHoursConfig() {
       setIsSaved(true)
       setIsEditMode(false)
       
-      localStorage.setItem('agenda_horarios_salvos', 'true')
-      
-      console.log('✅ Agenda configurada com sucesso!')
+      console.log('✅ Horários configurados com sucesso!')
     } catch (err) {
       const apiError = err as ApiError
       
