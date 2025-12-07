@@ -20,3 +20,84 @@
 [00:02:27.447] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda
 [00:02:27.620] Browser LOG     🔒 Status da resposta: 201
 [00:02:27.620] Browser LOG     ✅ Agenda configurada com sucesso!
+[00:06:16.472] Server  LOG      ✓ Compiled in 150ms
+[00:08:36.098] Server  LOG      ✓ Compiled in 136ms
+[00:09:04.364] Server  LOG      ✓ Compiled in 372ms
+[00:10:46.987] Server  LOG      ✓ Compiled in 100ms
+[00:10:59.750] Server  LOG      ✓ Compiled in 117ms
+[00:10:59.902] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:10:59.902] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:10:59.902] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:10:59.902] Browser LOG     🔒 Status da resposta: 200
+[00:10:59.902] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: []
+[00:10:59.902] Browser LOG     ✅ DEBUG: Serviços carregados: []
+[00:11:18.117] Server  LOG      ✓ Compiled in 112ms
+[00:12:06.440] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133397271}
+[00:12:07.295] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:12:07.295] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:12:07.295] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:12:07.295] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:12:07.295] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:12:07.295] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:12:07.295] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133398113}
+[00:12:07.295] Browser LOG     🔒 Status da resposta: 200
+[00:12:07.295] Browser LOG     🔒 Status da resposta: 200
+[00:12:07.295] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: []
+[00:12:07.295] Browser LOG     ✅ DEBUG: Serviços carregados: []
+[00:12:07.295] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: []
+[00:12:07.295] Browser LOG     ✅ DEBUG: Serviços carregados: []
+[00:13:23.458] Browser LOG     🔍 DEBUG: Cadastrando novo serviço: {"duracaoMin":180,"nome":"Unha em gel"}
+[00:13:23.458] Browser LOG     🔍 DEBUG - Cadastrando serviço: {"duracaoMin":180,"nome":"Unha em gel"}
+[00:13:23.458] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:13:23.595] Browser LOG     🔒 Status da resposta: 201
+[00:13:23.595] Browser LOG     ✅ DEBUG: Serviço cadastrado com sucesso: {"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"}
+[00:13:45.972] Browser LOG     🔍 DEBUG: Cadastrando novo serviço: {"duracaoMin":180,"nome":"Unha encapsulada"}
+[00:13:45.972] Browser LOG     🔍 DEBUG - Cadastrando serviço: {"duracaoMin":180,"nome":"Unha encapsulada"}
+[00:13:45.972] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:13:45.972] Browser LOG     🔒 Status da resposta: 201
+[00:13:45.972] Browser LOG     ✅ DEBUG: Serviço cadastrado com sucesso: {"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}
+[00:13:54.226] Browser LOG     🔍 DEBUG: Atualizando serviço: {"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}
+[00:13:54.226] Browser LOG     🔍 DEBUG - Atualizando serviço: 18502404-a516-4b71-bdc1-8fa442709ea5 {"duracaoMin":150,"nome":"Unha encapsulada"}
+[00:13:54.226] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico/18502404-a516-4b71-bdc1-8fa442709ea5
+[00:13:54.226] Browser LOG     🔒 Status da resposta: 200
+[00:13:54.226] Browser LOG     ✅ DEBUG: Serviço atualizado com sucesso: {"descricao":null,"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}
+[00:14:11.931] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133522778}
+[00:14:13.033] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:14:13.033] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:14:13.033] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:14:13.033] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:14:13.033] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:14:13.033] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:14:13.033] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133523804}
+[00:14:13.033] Browser LOG     🔒 Status da resposta: 200
+[00:14:13.033] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:14:13.033] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:14:13.033] Browser LOG     🔒 Status da resposta: 200
+[00:14:13.033] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:14:13.033] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":150,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:14:22.639] Browser LOG     🔍 DEBUG: Atualizando serviço: {"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}
+[00:14:22.639] Browser LOG     🔍 DEBUG - Atualizando serviço: 18502404-a516-4b71-bdc1-8fa442709ea5 {"duracaoMin":180,"nome":"Unha encapsulada"}
+[00:14:22.639] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico/18502404-a516-4b71-bdc1-8fa442709ea5
+[00:14:22.639] Browser LOG     🔒 Status da resposta: 200
+[00:14:22.639] Browser LOG     ✅ DEBUG: Serviço atualizado com sucesso: {"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}
+[00:14:29.572] Browser LOG     🔍 DEBUG: Cadastrando novo serviço: {"duracaoMin":90,"nome":"unha"}
+[00:14:29.573] Browser LOG     🔍 DEBUG - Cadastrando serviço: {"duracaoMin":90,"nome":"unha"}
+[00:14:29.573] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:14:29.573] Browser LOG     🔒 Status da resposta: 201
+[00:14:29.573] Browser LOG     ✅ DEBUG: Serviço cadastrado com sucesso: {"descricao":null,"duracaoMin":90,"id":"afacd1be-51a1-4a6a-bdf0-769e6925f90b","nome":"unha"}
+[00:14:43.465] Browser LOG     🔍 DEBUG: Deletando serviço: afacd1be-51a1-4a6a-bdf0-769e6925f90b
+[00:14:43.466] Browser LOG     🔍 DEBUG - Deletando serviço: afacd1be-51a1-4a6a-bdf0-769e6925f90b
+[00:14:43.466] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico/afacd1be-51a1-4a6a-bdf0-769e6925f90b
+[00:14:43.466] Browser LOG     🔒 Status da resposta: 204
+[00:14:43.466] Browser LOG     ✅ DEBUG: Serviço deletado com sucesso
+[00:15:16.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:15:17.179] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[00:15:17.179] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[00:15:17.179] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[00:15:17.330] Browser LOG     🔒 Status da resposta: 200
+[00:15:17.330] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:15:17.330] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[00:15:17.549] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:15:17.549] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard/configuracoes","route":"/dashboard/configuracoes"}
+[00:15:17.549] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765133588405}
+[00:16:11.809] Server  LOG      ✓ Compiled in 0ms

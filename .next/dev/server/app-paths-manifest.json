@@ -1,5 +1,6 @@
 {
   "/dashboard/configuracoes/page": "app/dashboard/configuracoes/page.js",
   "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/produtos/page": "app/dashboard/produtos/page.js",
   "/login/page": "app/login/page.js"
 }

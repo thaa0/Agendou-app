@@ -1,7 +1,6 @@
 import { WorkingHoursConfig } from "@/components/working-hours-config"
 import { ServicesConfig } from "@/components/services-config"
 import { BookingPolicies } from "@/components/booking-policies"
-import { MessageTemplates } from "@/components/message-templates"
 import { ProfileConfig } from "@/components/profile-config"
 
 export default function ConfiguracoesPage() {
@@ -16,7 +15,6 @@ export default function ConfiguracoesPage() {
       <WorkingHoursConfig />
       <ServicesConfig />
       <BookingPolicies />
-      <MessageTemplates />
     </div>
   )
 }

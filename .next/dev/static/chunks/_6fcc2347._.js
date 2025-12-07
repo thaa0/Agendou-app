@@ -1270,6 +1270,50 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
     __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
 }
 }),
+"[project]/lib/services/servico-service.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ServicoService",
+    ()=>ServicoService,
+    "servicoService",
+    ()=>servicoService
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$api$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/services/api-service.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/api-config.ts [app-client] (ecmascript)");
+;
+;
+class ServicoService extends __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$api$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ApiService"] {
+    /**
+   * Cadastra um novo serviço
+   * @param dados - Dados do serviço
+   * @returns Serviço criado com ID
+   */ async cadastrarServico(dados) {
+        console.log('🔍 DEBUG - Cadastrando serviço:', dados);
+        return this.post(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["API_CONFIG"].endpoints.servico.base, dados);
+    }
+    /**
+   * Atualiza um serviço existente
+   * @param servicoId - ID do serviço
+   * @param dados - Novos dados do serviço
+   * @returns Serviço atualizado
+   */ async atualizarServico(servicoId, dados) {
+        console.log('🔍 DEBUG - Atualizando serviço:', servicoId, dados);
+        return this.put(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["API_CONFIG"].endpoints.servico.byId(servicoId), dados);
+    }
+    /**
+   * Deleta um serviço
+   * @param servicoId - ID do serviço a ser deletado
+   */ async deletarServico(servicoId) {
+        console.log('🔍 DEBUG - Deletando serviço:', servicoId);
+        return this.delete(__TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$api$2d$config$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["API_CONFIG"].endpoints.servico.byId(servicoId));
+    }
+}
+const servicoService = new ServicoService();
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
 "[project]/components/services-config.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
 "use strict";
 
@@ -1288,6 +1332,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$re
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/pencil.js [app-client] (ecmascript) <export default as Pencil>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/hooks/use-toast.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$servico$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/lib/services/servico-service.ts [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
 "use client";
@@ -1298,59 +1343,161 @@ var _s = __turbopack_context__.k.signature();
 ;
 ;
 ;
+;
 function ServicesConfig() {
     _s();
-    const [services, setServices] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([
-        {
-            id: 1,
-            name: "Esmaltação em Gel",
-            duration: 60
-        },
-        {
-            id: 2,
-            name: "Alongamento",
-            duration: 120
-        },
-        {
-            id: 3,
-            name: "Manutenção",
-            duration: 90
-        }
-    ]);
+    const [services, setServices] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
     const [newServiceName, setNewServiceName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [newServiceDescription, setNewServiceDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
     const [newServiceDuration, setNewServiceDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [editingId, setEditingId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [editName, setEditName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [editDescription, setEditDescription] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [editDuration, setEditDuration] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [deleteServiceId, setDeleteServiceId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [isLoading, setIsLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
     const { toast } = (0, __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"])();
-    const handleAddService = ()=>{
-        if (!newServiceName || !newServiceDuration) {
+    const handleAddService = async ()=>{
+        if (!newServiceName.trim() || !newServiceDuration) {
             toast({
                 title: "Erro",
-                description: "Preencha todos os campos do serviço.",
+                description: "Preencha pelo menos o nome e a duração do serviço.",
                 variant: "destructive"
             });
             return;
         }
-        const newService = {
-            id: Date.now(),
-            name: newServiceName,
-            duration: Number.parseInt(newServiceDuration)
-        };
-        setServices([
-            ...services,
-            newService
-        ]);
-        setNewServiceName("");
-        setNewServiceDuration("");
-        toast({
-            title: "Serviço adicionado!",
-            description: `${newServiceName} foi adicionado à sua lista.`
-        });
+        const duration = Number.parseInt(newServiceDuration);
+        if (duration <= 0) {
+            toast({
+                title: "Erro",
+                description: "A duração deve ser maior que zero.",
+                variant: "destructive"
+            });
+            return;
+        }
+        setIsLoading(true);
+        try {
+            console.log('🔍 DEBUG: Cadastrando novo serviço:', {
+                nome: newServiceName,
+                descricao: newServiceDescription || undefined,
+                duracaoMin: duration
+            });
+            const novoServico = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$servico$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["servicoService"].cadastrarServico({
+                nome: newServiceName.trim(),
+                descricao: newServiceDescription.trim() || undefined,
+                duracaoMin: duration
+            });
+            console.log('✅ DEBUG: Serviço cadastrado com sucesso:', novoServico);
+            setServices([
+                ...services,
+                novoServico
+            ]);
+            setNewServiceName("");
+            setNewServiceDescription("");
+            setNewServiceDuration("");
+            toast({
+                title: "Serviço adicionado!",
+                description: `${novoServico.nome} foi adicionado à sua lista.`
+            });
+        } catch (error) {
+            console.error('❌ DEBUG: Erro ao cadastrar serviço:', error);
+            toast({
+                title: "Erro ao adicionar serviço",
+                description: error.message || "Não foi possível adicionar o serviço. Tente novamente.",
+                variant: "destructive"
+            });
+        } finally{
+            setIsLoading(false);
+        }
     };
-    const handleDeleteService = (id)=>{
-        setServices(services.filter((s)=>s.id !== id));
-        toast({
-            title: "Serviço removido",
-            description: "O serviço foi excluído com sucesso."
-        });
+    const handleEditService = (service)=>{
+        setEditingId(service.id);
+        setEditName(service.nome);
+        setEditDescription(service.descricao || "");
+        setEditDuration(service.duracaoMin.toString());
+    };
+    const handleCancelEdit = ()=>{
+        setEditingId(null);
+        setEditName("");
+        setEditDescription("");
+        setEditDuration("");
+    };
+    const handleSaveEdit = async ()=>{
+        if (!editingId) return;
+        if (!editName.trim() || !editDuration) {
+            toast({
+                title: "Erro",
+                description: "Preencha pelo menos o nome e a duração do serviço.",
+                variant: "destructive"
+            });
+            return;
+        }
+        const duration = Number.parseInt(editDuration);
+        if (duration <= 0) {
+            toast({
+                title: "Erro",
+                description: "A duração deve ser maior que zero.",
+                variant: "destructive"
+            });
+            return;
+        }
+        setIsLoading(true);
+        try {
+            console.log('🔍 DEBUG: Atualizando serviço:', {
+                id: editingId,
+                nome: editName,
+                descricao: editDescription || undefined,
+                duracaoMin: duration
+            });
+            const servicoAtualizado = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$servico$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["servicoService"].atualizarServico(editingId, {
+                nome: editName.trim(),
+                descricao: editDescription.trim() || undefined,
+                duracaoMin: duration
+            });
+            console.log('✅ DEBUG: Serviço atualizado com sucesso:', servicoAtualizado);
+            setServices(services.map((s)=>s.id === editingId ? servicoAtualizado : s));
+            setEditingId(null);
+            setEditName("");
+            setEditDescription("");
+            setEditDuration("");
+            toast({
+                title: "Serviço atualizado!",
+                description: `${servicoAtualizado.nome} foi atualizado com sucesso.`
+            });
+        } catch (error) {
+            console.error('❌ DEBUG: Erro ao atualizar serviço:', error);
+            toast({
+                title: "Erro ao atualizar serviço",
+                description: error.message || "Não foi possível atualizar o serviço. Tente novamente.",
+                variant: "destructive"
+            });
+        } finally{
+            setIsLoading(false);
+        }
+    };
+    const handleDeleteService = async ()=>{
+        if (!deleteServiceId) return;
+        setIsLoading(true);
+        try {
+            console.log('🔍 DEBUG: Deletando serviço:', deleteServiceId);
+            await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$services$2f$servico$2d$service$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["servicoService"].deletarServico(deleteServiceId);
+            console.log('✅ DEBUG: Serviço deletado com sucesso');
+            setServices(services.filter((s)=>s.id !== deleteServiceId));
+            setDeleteServiceId(null);
+            toast({
+                title: "Serviço removido",
+                description: "O serviço foi excluído com sucesso."
+            });
+        } catch (error) {
+            console.error('❌ DEBUG: Erro ao deletar serviço:', error);
+            toast({
+                title: "Erro ao remover serviço",
+                description: error.message || "Não foi possível remover o serviço. Tente novamente.",
+                variant: "destructive"
+            });
+        } finally{
+            setIsLoading(false);
+        }
     };
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
         children: [
@@ -1363,33 +1510,33 @@ function ServicesConfig() {
                                 className: "w-5 h-5 text-primary"
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 63,
+                                lineNumber: 193,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
                                 children: "Serviços"
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 64,
+                                lineNumber: 194,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/services-config.tsx",
-                        lineNumber: 62,
+                        lineNumber: 192,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
                         children: "Gerencie os serviços que você oferece"
                     }, void 0, false, {
                         fileName: "[project]/components/services-config.tsx",
-                        lineNumber: 66,
+                        lineNumber: 196,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/services-config.tsx",
-                lineNumber: 61,
+                lineNumber: 191,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
@@ -1402,7 +1549,7 @@ function ServicesConfig() {
                                 children: "Adicionar Novo Serviço"
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 70,
+                                lineNumber: 200,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1414,7 +1561,7 @@ function ServicesConfig() {
                                         onChange: (e)=>setNewServiceName(e.target.value)
                                     }, void 0, false, {
                                         fileName: "[project]/components/services-config.tsx",
-                                        lineNumber: 72,
+                                        lineNumber: 202,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
@@ -1425,7 +1572,7 @@ function ServicesConfig() {
                                         className: "w-32"
                                     }, void 0, false, {
                                         fileName: "[project]/components/services-config.tsx",
-                                        lineNumber: 77,
+                                        lineNumber: 207,
                                         columnNumber: 13
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1436,26 +1583,26 @@ function ServicesConfig() {
                                                 className: "w-4 h-4"
                                             }, void 0, false, {
                                                 fileName: "[project]/components/services-config.tsx",
-                                                lineNumber: 85,
+                                                lineNumber: 215,
                                                 columnNumber: 15
                                             }, this),
                                             "Adicionar"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/components/services-config.tsx",
-                                        lineNumber: 84,
+                                        lineNumber: 214,
                                         columnNumber: 13
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 71,
+                                lineNumber: 201,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/services-config.tsx",
-                        lineNumber: 69,
+                        lineNumber: 199,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1465,7 +1612,7 @@ function ServicesConfig() {
                                 children: "Serviços Cadastrados"
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 92,
+                                lineNumber: 222,
                                 columnNumber: 11
                             }, this),
                             services.length === 0 ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1473,7 +1620,7 @@ function ServicesConfig() {
                                 children: "Nenhum serviço cadastrado ainda"
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 94,
+                                lineNumber: 224,
                                 columnNumber: 13
                             }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "space-y-2",
@@ -1487,7 +1634,7 @@ function ServicesConfig() {
                                                         children: service.name
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/services-config.tsx",
-                                                        lineNumber: 100,
+                                                        lineNumber: 230,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -1498,13 +1645,13 @@ function ServicesConfig() {
                                                         ]
                                                     }, void 0, true, {
                                                         fileName: "[project]/components/services-config.tsx",
-                                                        lineNumber: 101,
+                                                        lineNumber: 231,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/services-config.tsx",
-                                                lineNumber: 99,
+                                                lineNumber: 229,
                                                 columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1517,12 +1664,12 @@ function ServicesConfig() {
                                                             className: "w-4 h-4"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/services-config.tsx",
-                                                            lineNumber: 105,
+                                                            lineNumber: 235,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/services-config.tsx",
-                                                        lineNumber: 104,
+                                                        lineNumber: 234,
                                                         columnNumber: 21
                                                     }, this),
                                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
@@ -1533,51 +1680,51 @@ function ServicesConfig() {
                                                             className: "w-4 h-4 text-destructive"
                                                         }, void 0, false, {
                                                             fileName: "[project]/components/services-config.tsx",
-                                                            lineNumber: 108,
+                                                            lineNumber: 238,
                                                             columnNumber: 23
                                                         }, this)
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/services-config.tsx",
-                                                        lineNumber: 107,
+                                                        lineNumber: 237,
                                                         columnNumber: 21
                                                     }, this)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "[project]/components/services-config.tsx",
-                                                lineNumber: 103,
+                                                lineNumber: 233,
                                                 columnNumber: 19
                                             }, this)
                                         ]
                                     }, service.id, true, {
                                         fileName: "[project]/components/services-config.tsx",
-                                        lineNumber: 98,
+                                        lineNumber: 228,
                                         columnNumber: 17
                                     }, this))
                             }, void 0, false, {
                                 fileName: "[project]/components/services-config.tsx",
-                                lineNumber: 96,
+                                lineNumber: 226,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/components/services-config.tsx",
-                        lineNumber: 91,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/services-config.tsx",
-                lineNumber: 68,
+                lineNumber: 198,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/components/services-config.tsx",
-        lineNumber: 60,
+        lineNumber: 190,
         columnNumber: 5
     }, this);
 }
-_s(ServicesConfig, "cH+E3+Q8KdOy972hAMqV9PHCa7I=", false, function() {
+_s(ServicesConfig, "GxmkbNyPNPnyHFJTrEIDMKC+4+g=", false, function() {
     return [
         __TURBOPACK__imported__module__$5b$project$5d2f$hooks$2f$use$2d$toast$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useToast"]
     ];
@@ -2750,4 +2897,4 @@ if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelper
 }),
 ]);
 
-//# sourceMappingURL=_688a53ad._.js.map
+//# sourceMappingURL=_6fcc2347._.js.map

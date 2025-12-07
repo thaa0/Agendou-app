@@ -17,6 +17,10 @@ export const API_CONFIG = {
     agenda: {
       configurar: '/v1/agenda',
     },
+    servico: {
+      base: '/v1/servico',
+      byId: (id: string) => `/v1/servico/${id}`,
+    },
   },
 } as const
 
