@@ -1,81 +1,325 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
-import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Button } from "@/components/ui/button"
-import { Clock } from "lucide-react"
-import { useToast } from "@/hooks/use-toast"
+import { TimeInput } from "@/components/ui/time-input"
+import { Clock, Copy, Edit2, Check } from "lucide-react"
+import { agendaService } from "@/lib/services/agenda-service"
+import type { ApiError } from "@/lib/services/auth-service"
 
-const daysOfWeek = [
-  { id: "seg", label: "Segunda" },
-  { id: "ter", label: "Terça" },
-  { id: "qua", label: "Quarta" },
-  { id: "qui", label: "Quinta" },
-  { id: "sex", label: "Sexta" },
-  { id: "sab", label: "Sábado" },
-  { id: "dom", label: "Domingo" },
+interface DaySchedule {
+  diaSemana: number
+  horaInicio: string
+  horaFim: string
+  ativo: boolean
+}
+
+const diasSemana = [
+  { id: 1, label: "Segunda-feira", short: "Seg" },
+  { id: 2, label: "Terça-feira", short: "Ter" },
+  { id: 3, label: "Quarta-feira", short: "Qua" },
+  { id: 4, label: "Quinta-feira", short: "Qui" },
+  { id: 5, label: "Sexta-feira", short: "Sex" },
+  { id: 6, label: "Sábado", short: "Sáb" },
+  { id: 7, label: "Domingo", short: "Dom" },
 ]
 
 export function WorkingHoursConfig() {
-  const [startTime, setStartTime] = useState("09:00")
-  const [endTime, setEndTime] = useState("18:00")
-  const [selectedDays, setSelectedDays] = useState(["seg", "ter", "qua", "qui", "sex"])
-  const { toast } = useToast()
+  const [horarios, setHorarios] = useState<DaySchedule[]>(
+    diasSemana.map(dia => ({
+      diaSemana: dia.id,
+      horaInicio: "09:00",
+      horaFim: "18:00",
+      ativo: dia.id <= 5, // Segunda a Sexta ativos por padrão
+    }))
+  )
+  
+  const [horaInicioGeral, setHoraInicioGeral] = useState("09:00")
+  const [horaFimGeral, setHoraFimGeral] = useState("18:00")
+  
+  const [isLoading, setIsLoading] = useState(false)
+  const [error, setError] = useState("")
+  const [isEditMode, setIsEditMode] = useState(false)
+  const [isSaved, setIsSaved] = useState(false)
+  const [savedHorarios, setSavedHorarios] = useState<DaySchedule[]>([])
 
-  const handleDayToggle = (dayId: string) => {
-    setSelectedDays((prev) => (prev.includes(dayId) ? prev.filter((d) => d !== dayId) : [...prev, dayId]))
+  // Verifica no localStorage se já foi salvo
+  useEffect(() => {
+    const saved = localStorage.getItem('agenda_horarios_salvos')
+    if (saved === 'true') {
+      setIsSaved(true)
+      setIsEditMode(false)
+    } else {
+      setIsEditMode(true)
+    }
+  }, [])
+
+  const handleDayToggle = (diaSemana: number) => {
+    setHorarios(prev =>
+      prev.map(h =>
+        h.diaSemana === diaSemana ? { ...h, ativo: !h.ativo } : h
+      )
+    )
   }
 
-  const handleSave = () => {
-    toast({
-      title: "Expediente salvo!",
-      description: "Suas configurações de horário foram atualizadas.",
-    })
+  const handleTimeChange = (diaSemana: number, field: 'horaInicio' | 'horaFim', value: string) => {
+    setHorarios(prev =>
+      prev.map(h =>
+        h.diaSemana === diaSemana ? { ...h, [field]: value } : h
+      )
+    )
   }
 
+  const aplicarParaTodos = () => {
+    setHorarios(prev =>
+      prev.map(h => ({
+        ...h,
+        horaInicio: horaInicioGeral,
+        horaFim: horaFimGeral,
+      }))
+    )
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setError("")
+
+    // Valida horários
+    const horariosAtivos = horarios.filter(h => h.ativo)
+    
+    if (horariosAtivos.length === 0) {
+      setError("Selecione pelo menos um dia de atendimento.")
+      return
+    }
+
+    // Valida formato e lógica dos horários
+    for (const h of horariosAtivos) {
+      if (!h.horaInicio.match(/^([01]\d|2[0-3]):[0-5]\d$/)) {
+        setError(`Formato de hora inválido para ${diasSemana.find(d => d.id === h.diaSemana)?.label}`)
+        return
+      }
+      if (!h.horaFim.match(/^([01]\d|2[0-3]):[0-5]\d$/)) {
+        setError(`Formato de hora inválido para ${diasSemana.find(d => d.id === h.diaSemana)?.label}`)
+        return
+      }
+      if (h.horaInicio >= h.horaFim) {
+        setError(`Horário de fim deve ser maior que o de início em ${diasSemana.find(d => d.id === h.diaSemana)?.label}`)
+        return
+      }
+    }
+
+    setIsLoading(true)
+
+    try {
+      // Envia apenas os dias ativos
+      const agendas = horariosAtivos.map(h => ({
+        diaSemana: h.diaSemana,
+        horaInicio: h.horaInicio,
+        horaFim: h.horaFim,
+      }))
+
+      await agendaService.configurarAgenda(agendas)
+
+      setSavedHorarios([...horarios])
+      setIsSaved(true)
+      setIsEditMode(false)
+      
+      localStorage.setItem('agenda_horarios_salvos', 'true')
+      
+      console.log('✅ Agenda configurada com sucesso!')
+    } catch (err) {
+      const apiError = err as ApiError
+      
+      if (apiError.status === 401) {
+        setError('Sua sessão expirou. Faça login novamente.')
+      } else {
+        setError(apiError.message || 'Erro ao salvar horários. Tente novamente.')
+      }
+      
+      console.error('❌ Erro ao configurar agenda:', apiError)
+    } finally {
+      setIsLoading(false)
+    }
+  }
+
+  const handleEdit = () => {
+    setHorarios([...savedHorarios])
+    setIsEditMode(true)
+    setError("")
+  }
+
+  const handleCancel = () => {
+    setHorarios([...savedHorarios])
+    setIsEditMode(false)
+    setError("")
+  }
+
+  // Modo visualização
+  if (isSaved && !isEditMode) {
+    const horariosAtivos = savedHorarios.filter(h => h.ativo)
+    
+    return (
+      <Card>
+        <CardHeader>
+          <div className="flex items-start justify-between">
+            <div className="flex items-center gap-2">
+              <Clock className="w-5 h-5 text-primary" />
+              <div>
+                <CardTitle className="flex items-center gap-2">
+                  Horários de Atendimento
+                  <Check className="w-5 h-5 text-green-600" />
+                </CardTitle>
+                <CardDescription>Horários configurados</CardDescription>
+              </div>
+            </div>
+            <Button variant="outline" size="sm" onClick={handleEdit}>
+              <Edit2 className="w-4 h-4 mr-2" />
+              Editar
+            </Button>
+          </div>
+        </CardHeader>
+        <CardContent>
+          <div className="space-y-3">
+            {horariosAtivos.map(h => {
+              const dia = diasSemana.find(d => d.id === h.diaSemana)
+              return (
+                <div key={h.diaSemana} className="flex items-center justify-between p-3 bg-muted/50 rounded-lg">
+                  <span className="font-medium">{dia?.label}</span>
+                  <span className="text-sm text-muted-foreground">
+                    {h.horaInicio} às {h.horaFim}
+                  </span>
+                </div>
+              )
+            })}
+          </div>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  // Modo edição
   return (
     <Card>
       <CardHeader>
         <div className="flex items-center gap-2">
           <Clock className="w-5 h-5 text-primary" />
-          <CardTitle>Configurações de Expediente</CardTitle>
+          <CardTitle>Horários de Atendimento</CardTitle>
         </div>
-        <CardDescription>Defina seus horários de atendimento</CardDescription>
+        <CardDescription>Defina seus horários de trabalho para cada dia da semana</CardDescription>
       </CardHeader>
-      <CardContent className="space-y-6">
-        <div className="grid gap-4 md:grid-cols-2">
-          <div className="space-y-2">
-            <Label htmlFor="startTime">Horário de Início</Label>
-            <Input id="startTime" type="time" value={startTime} onChange={(e) => setStartTime(e.target.value)} />
-          </div>
-          <div className="space-y-2">
-            <Label htmlFor="endTime">Horário de Fim</Label>
-            <Input id="endTime" type="time" value={endTime} onChange={(e) => setEndTime(e.target.value)} />
-          </div>
-        </div>
-
-        <div className="space-y-3">
-          <Label>Dias de Atendimento</Label>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-            {daysOfWeek.map((day) => (
-              <div key={day.id} className="flex items-center gap-2">
-                <Checkbox
-                  id={day.id}
-                  checked={selectedDays.includes(day.id)}
-                  onCheckedChange={() => handleDayToggle(day.id)}
+      <CardContent>
+        <form onSubmit={handleSubmit} className="space-y-6">
+          {/* Aplicar para todos */}
+          <div className="p-4 bg-primary/5 border border-primary/20 rounded-lg space-y-4">
+            <div className="flex items-center gap-2">
+              <Copy className="w-4 h-4 text-primary" />
+              <Label className="text-sm font-medium">Aplicar mesmo horário para todos os dias</Label>
+            </div>
+            <div className="grid gap-4 md:grid-cols-3">
+              <div className="space-y-2">
+                <Label htmlFor="horaInicioGeral" className="text-xs">Início</Label>
+                <TimeInput
+                  id="horaInicioGeral"
+                  value={horaInicioGeral}
+                  onChange={(e) => setHoraInicioGeral(e.target.value)}
+                  placeholder="09:00"
                 />
-                <Label htmlFor={day.id} className="cursor-pointer">
-                  {day.label}
-                </Label>
               </div>
-            ))}
+              <div className="space-y-2">
+                <Label htmlFor="horaFimGeral" className="text-xs">Fim</Label>
+                <TimeInput
+                  id="horaFimGeral"
+                  value={horaFimGeral}
+                  onChange={(e) => setHoraFimGeral(e.target.value)}
+                  placeholder="18:00"
+                />
+              </div>
+              <div className="flex items-end">
+                <Button type="button" variant="outline" onClick={aplicarParaTodos} className="w-full">
+                  <Copy className="w-4 h-4 mr-2" />
+                  Aplicar
+                </Button>
+              </div>
+            </div>
+            <p className="text-xs text-muted-foreground">
+              Formato 24 horas (ex: 09:00, 14:30, 20:00)
+            </p>
           </div>
-        </div>
 
-        <Button onClick={handleSave}>Salvar Expediente</Button>
+          {/* Horários individuais por dia */}
+          <div className="space-y-3">
+            <Label>Configure cada dia individualmente</Label>
+            {horarios.map(h => {
+              const dia = diasSemana.find(d => d.id === h.diaSemana)
+              return (
+                <div
+                  key={h.diaSemana}
+                  className={`p-4 border rounded-lg space-y-3 transition-colors ${
+                    h.ativo ? 'bg-background border-primary/20' : 'bg-muted/30 border-muted'
+                  }`}
+                >
+                  <div className="flex items-center gap-3">
+                    <Checkbox
+                      id={`dia-${h.diaSemana}`}
+                      checked={h.ativo}
+                      onCheckedChange={() => handleDayToggle(h.diaSemana)}
+                    />
+                    <Label
+                      htmlFor={`dia-${h.diaSemana}`}
+                      className={`cursor-pointer font-medium ${!h.ativo && 'text-muted-foreground'}`}
+                    >
+                      {dia?.label}
+                    </Label>
+                  </div>
+                  
+                  {h.ativo && (
+                    <div className="grid gap-3 md:grid-cols-2 ml-7">
+                      <div className="space-y-1">
+                        <Label htmlFor={`inicio-${h.diaSemana}`} className="text-xs">Horário de Início</Label>
+                        <TimeInput
+                          id={`inicio-${h.diaSemana}`}
+                          value={h.horaInicio}
+                          onChange={(e) => handleTimeChange(h.diaSemana, 'horaInicio', e.target.value)}
+                          placeholder="09:00"
+                        />
+                      </div>
+                      <div className="space-y-1">
+                        <Label htmlFor={`fim-${h.diaSemana}`} className="text-xs">Horário de Fim</Label>
+                        <TimeInput
+                          id={`fim-${h.diaSemana}`}
+                          value={h.horaFim}
+                          onChange={(e) => handleTimeChange(h.diaSemana, 'horaFim', e.target.value)}
+                          placeholder="18:00"
+                        />
+                      </div>
+                    </div>
+                  )}
+                </div>
+              )
+            })}
+          </div>
+
+          {error && (
+            <div className="p-3 text-sm text-destructive bg-destructive/10 border border-destructive/20 rounded-md">
+              {error}
+            </div>
+          )}
+
+          <div className="flex gap-2">
+            <Button type="submit" disabled={isLoading}>
+              {isLoading ? "Salvando..." : isSaved ? "Atualizar Horários" : "Salvar Horários"}
+            </Button>
+            
+            {isSaved && (
+              <Button type="button" variant="outline" onClick={handleCancel} disabled={isLoading}>
+                Cancelar
+              </Button>
+            )}
+          </div>
+        </form>
       </CardContent>
     </Card>
   )

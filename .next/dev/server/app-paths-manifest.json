@@ -1,9 +1,5 @@
 {
-  "/cadastro/page": "app/cadastro/page.js",
-  "/dashboard/agendamentos-hoje/page": "app/dashboard/agendamentos-hoje/page.js",
-  "/dashboard/agendamentos-mes/page": "app/dashboard/agendamentos-mes/page.js",
   "/dashboard/configuracoes/page": "app/dashboard/configuracoes/page.js",
   "/dashboard/page": "app/dashboard/page.js",
-  "/dashboard/produtos/page": "app/dashboard/produtos/page.js",
   "/login/page": "app/login/page.js"
 }

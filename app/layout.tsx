@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 // <CHANGE> Importar Toaster para exibir notificações toast
 import { Toaster } from "@/components/ui/toaster"
+import { TimeInputConfigurator } from "@/components/time-input-configurator"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -41,6 +42,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className={`font-sans antialiased`}>
+        <TimeInputConfigurator />
         {children}
         {/* <CHANGE> Adicionar Toaster para notificações */}
         <Toaster />

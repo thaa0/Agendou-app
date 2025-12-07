@@ -1,85 +1,22 @@
-[00:00:00.894] Server  LOG      ✓ Ready in 596ms
-[00:00:11.948] Server  LOG      ○ Compiling /cadastro ...
-[00:00:16.638] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:16.638] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:16.638] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/cadastro","route":"/cadastro"}
-[00:00:16.638] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/cadastro color: rgb(120, 120, 120) color: inherit {"dp":"/cadastro","o":"http://localhost:3000/cadastro","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765129082403}
-[00:00:40.882] Browser LOG     🔍 DEBUG - URL completa: http://localhost:8080/agendou/api/v1/auth/cadastro
-[00:00:40.882] Browser LOG     🔍 DEBUG - Dados enviados: {"email":"nanda@gmail.com","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","senha":"nanda151","whatsapp":"5573988805168"}
-[00:00:40.882] Browser LOG     🔍 DEBUG - Erro capturado: {}
-[00:00:59.876] Browser LOG     🔍 DEBUG - URL completa: http://localhost:8080/agendou/api/v1/auth/cadastro
-[00:00:59.877] Browser LOG     🔍 DEBUG - Dados enviados: {"email":"nanda@gmail.com","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","senha":"nanda151","whatsapp":"5573988805168"}
-[00:00:59.877] Browser LOG     🔍 DEBUG - Erro capturado: {}
-[00:05:26.771] Browser LOG     🔍 DEBUG - URL completa: http://localhost:8080/agendou/api/v1/auth/cadastro
-[00:05:26.771] Browser LOG     🔍 DEBUG - Dados enviados: {"email":"nanda@gmail.com","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","senha":"nanda151","whatsapp":"5573988805168"}
-[00:05:27.572] Browser LOG     🔍 DEBUG - Status da resposta: 409
-[00:05:27.573] Browser LOG     🔍 DEBUG - Erro do backend: {"description":"REGISTRATION ERROR!","message":"O EMAIL OU DOCUMENTO IDENTIFICADOR JÁ ESTÁ REGISTRADO"}
-[00:05:27.573] Browser LOG     🔍 DEBUG - Erro capturado: {"message":"O EMAIL OU DOCUMENTO IDENTIFICADOR JÁ ESTÁ REGISTRADO","status":409}
-[00:05:37.430] Browser LOG     🔍 DEBUG - URL completa: http://localhost:8080/agendou/api/v1/auth/cadastro
-[00:05:37.430] Browser LOG     🔍 DEBUG - Dados enviados: {"email":"nanda1510@gmail.com","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","senha":"nanda151","whatsapp":"5573988805168"}
-[00:05:37.594] Browser LOG     🔍 DEBUG - Status da resposta: 201
-[00:05:40.601] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765129409440}
-[00:16:39.486] Server  LOG      ✓ Compiled in 259ms
-[00:17:05.932] Server  LOG      ✓ Compiled in 79ms
-[00:17:19.714] Server  LOG      ✓ Compiled in 136ms
-[00:17:31.366] Server  LOG      ✓ Compiled in 123ms
-[00:19:19.527] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
-[00:19:19.527] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda@gmail.com","senha":"***"}
-[00:19:20.439] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 401
-[00:19:20.439] Browser LOG     🔍 DEBUG LOGIN - Erro do backend: {"description":"CREDENCIAL ERROR!","message":"USUARIO OU SENHA ESTÃO INVÁLIDOS"}
-[00:19:20.439] Browser LOG     🔍 DEBUG LOGIN - Erro capturado: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
-[00:19:20.439] Browser ERROR   ❌ Erro no login: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
-[00:19:28.212] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
-[00:19:28.212] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda15@gmail.com","senha":"***"}
-[00:19:28.212] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 401
-[00:19:28.212] Browser LOG     🔍 DEBUG LOGIN - Erro do backend: {"description":"CREDENCIAL ERROR!","message":"USUARIO OU SENHA ESTÃO INVÁLIDOS"}
-[00:19:28.212] Browser LOG     🔍 DEBUG LOGIN - Erro capturado: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
-[00:19:28.212] Browser ERROR   ❌ Erro no login: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
-[00:20:44.216] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
-[00:20:44.216] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
-[00:20:44.485] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 200
-[00:20:44.485] Browser LOG     🔍 DEBUG LOGIN - Token recebido: {"tipo":"Bearer","token":"eyJhbGciOiJIUzI1NiJ9...","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
-[00:20:44.485] Browser LOG     ✅ Login realizado com sucesso! {"tipo":"Bearer","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
-[00:20:45.449] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130314430}
-[00:21:03.355] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130332340}
-[00:21:16.343] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130345286}
-[00:21:17.388] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130346353}
-[00:21:32.828] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130361801}
-[00:25:51.604] Server  LOG      ✓ Compiled in 66ms
-[00:27:38.037] Server  LOG      ✓ Compiled in 1ms
-[00:28:33.249] Browser LOG     🔍 DEBUG - Finalizando cadastro profissional: {"descricao":"Sou Nail designer artistica focada em unhas diferentes"}
-[00:28:33.249] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
-[00:28:33.576] Browser LOG     🔒 Status da resposta: 200
-[00:28:33.576] Browser ERROR   ❌ Erro ao finalizar cadastro: {}
-[00:29:24.092] Server  LOG      ✓ Compiled in 84ms
-[00:30:20.957] Browser LOG     🔍 DEBUG - Finalizando cadastro profissional: {"descricao":"Sou Nail designer artistica focada em unhas diferentes"}
-[00:30:20.957] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
-[00:30:20.957] Browser LOG     🔒 Status da resposta: 200
-[00:30:20.957] Browser LOG     ✅ Cadastro profissional finalizado com sucesso!
-[00:30:32.373] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130901337}
-[00:30:33.673] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765130902577}
-[00:32:54.183] Server  LOG      ✓ Compiled in 189ms
-[00:33:23.718] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:33:23.808] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:33:23.808] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/dashboard/configuracoes","route":"/dashboard/configuracoes"}
-[00:33:23.809] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131072774}
-[00:33:36.733] Browser LOG     🔍 DEBUG - Finalizando cadastro profissional: {"descricao":"Sou nail designer artistica"}
-[00:33:36.733] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
-[00:33:36.733] Browser LOG     🔒 Status da resposta: 200
-[00:33:36.734] Browser LOG     ✅ Cadastro profissional finalizado com sucesso!
-[00:33:43.627] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131092552}
-[00:33:44.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131093746}
-[00:36:36.519] Server  LOG      ✓ Compiled in 96ms
-[00:37:25.858] Server  LOG      ✓ Compiled in 157ms
-[00:38:33.199] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131382122}
-[00:38:34.297] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131383240}
-[00:40:11.495] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"Olá, {nome} este é um lembrete do seu atendimento ás {horario}","msgPosAtendimento":"Obrigada por confiar no meu trabalho, {nome}!"}
-[00:40:11.495] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
-[00:40:11.641] Browser LOG     🔒 Status da resposta: 200
-[00:40:11.641] Browser LOG     ✅ Políticas configuradas com sucesso!
-[00:40:25.629] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131494561}
-[00:40:26.955] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131495889}
-[00:41:09.378] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":13,"msgLembreteAtendimento":"ola, seja bem vinda, {nome}","msgPosAtendimento":"Ola, {nome}, obrigada por confiar no meu trabalho!"}
-[00:41:09.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
-[00:41:09.378] Browser LOG     🔒 Status da resposta: 200
-[00:41:09.379] Browser LOG     ✅ Políticas configuradas com sucesso!
+[00:00:00.915] Server  LOG      ✓ Ready in 606ms
+[00:00:04.535] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:04.705] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:04.705] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/login","route":"/login"}
+[00:00:04.705] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765132675573}
+[00:00:16.019] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
+[00:00:16.020] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
+[00:00:16.215] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 401
+[00:00:16.215] Browser LOG     🔍 DEBUG LOGIN - Erro do backend: {"description":"CREDENCIAL ERROR!","message":"USUARIO OU SENHA ESTÃO INVÁLIDOS"}
+[00:00:16.216] Browser LOG     🔍 DEBUG LOGIN - Erro capturado: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
+[00:00:16.216] Browser ERROR   ❌ Erro no login: {"message":"USUARIO OU SENHA ESTÃO INVÁLIDOS","status":401}
+[00:00:21.566] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
+[00:00:21.567] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
+[00:00:21.733] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 200
+[00:00:21.734] Browser LOG     🔍 DEBUG LOGIN - Token recebido: {"tipo":"Bearer","token":"eyJhbGciOiJIUzI1NiJ9...","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[00:00:21.734] Browser LOG     ✅ Login realizado com sucesso! {"tipo":"Bearer","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[00:00:22.678] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765132693544}
+[00:00:26.262] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765132697109}
+[00:02:27.447] Browser LOG     🔍 DEBUG - Configurando agenda: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00"}]
+[00:02:27.447] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda
+[00:02:27.620] Browser LOG     🔒 Status da resposta: 201
+[00:02:27.620] Browser LOG     ✅ Agenda configurada com sucesso!

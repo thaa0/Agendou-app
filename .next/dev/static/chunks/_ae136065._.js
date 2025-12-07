@@ -274,6 +274,9 @@ const API_CONFIG = {
         },
         configuracao: {
             politicas: '/v1/configuracao'
+        },
+        agenda: {
+            configurar: '/v1/agenda'
         }
     }
 };
