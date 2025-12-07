@@ -5,6 +5,7 @@ import { WorkingHoursConfig } from "@/components/working-hours-config"
 import { ServicesConfig } from "@/components/services-config"
 import { BookingPolicies } from "@/components/booking-policies"
 import { ProfileConfig } from "@/components/profile-config"
+import { ExceptionalHoursConfig } from "@/components/exceptional-hours-config"
 import { profissionalService, type ProfissionalResponse } from "@/lib/services/profissional-service"
 import { useToast } from "@/hooks/use-toast"
 
@@ -56,6 +57,7 @@ export default function ConfiguracoesPage() {
 
       <ProfileConfig initialDescricao={profissionalData?.descricao ?? undefined} />
       <WorkingHoursConfig initialHorarios={profissionalData?.horarios ?? []} />
+      <ExceptionalHoursConfig />
       <ServicesConfig />
       <BookingPolicies 
         initialConfiguracao={

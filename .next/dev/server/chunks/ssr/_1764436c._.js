@@ -245,7 +245,8 @@ const API_CONFIG = {
             politicas: '/v1/configuracao'
         },
         agenda: {
-            configurar: '/v1/agenda'
+            configurar: '/v1/agenda',
+            excecao: '/v1/agenda/excecao'
         },
         servico: {
             base: '/v1/servico',
@@ -3103,7 +3104,7 @@ function ConfiguracoesPage() {
                             children: "Configurações"
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                            lineNumber: 42,
+                            lineNumber: 43,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3111,13 +3112,13 @@ function ConfiguracoesPage() {
                             children: "Gerencie seu perfil, expediente, serviços e políticas"
                         }, void 0, false, {
                             fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                            lineNumber: 43,
+                            lineNumber: 44,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                    lineNumber: 41,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3125,13 +3126,13 @@ function ConfiguracoesPage() {
                     children: "Carregando configurações..."
                 }, void 0, false, {
                     fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                    lineNumber: 45,
+                    lineNumber: 46,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-            lineNumber: 40,
+            lineNumber: 41,
             columnNumber: 7
         }, this);
     }
@@ -3145,7 +3146,7 @@ function ConfiguracoesPage() {
                         children: "Configurações"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                        lineNumber: 53,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -3153,45 +3154,45 @@ function ConfiguracoesPage() {
                         children: "Gerencie seu perfil, expediente, serviços e políticas"
                     }, void 0, false, {
                         fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                        lineNumber: 54,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                lineNumber: 52,
+                lineNumber: 53,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$profile$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ProfileConfig"], {
                 initialDescricao: profissionalData?.descricao ?? undefined
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                lineNumber: 57,
+                lineNumber: 58,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$working$2d$hours$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["WorkingHoursConfig"], {
                 initialHorarios: profissionalData?.horarios ?? []
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                lineNumber: 58,
+                lineNumber: 59,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$services$2d$config$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["ServicesConfig"], {}, void 0, false, {
                 fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$booking$2d$policies$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["BookingPolicies"], {
                 initialConfiguracao: profissionalData?.configuracao && Object.keys(profissionalData.configuracao).length > 0 ? profissionalData.configuracao : undefined
             }, void 0, false, {
                 fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-                lineNumber: 60,
+                lineNumber: 61,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/dashboard/configuracoes/page.tsx",
-        lineNumber: 51,
+        lineNumber: 52,
         columnNumber: 5
     }, this);
 }

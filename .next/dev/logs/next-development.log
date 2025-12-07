@@ -748,3 +748,461 @@ Incoming: %s useEffect [] [[object Object]]
 [01:12:20.401] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
 [01:12:20.401] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
 [01:12:40.913] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137031765}
+[01:16:26.063] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137256930}
+[01:16:30.717] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137261586}
+[01:16:32.020] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137262865}
+[01:16:33.581] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137264440}
+[01:16:34.639] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:16:34.639] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:16:34.639] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:16:34.639] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:16:34.639] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137265415}
+[01:16:34.639] Browser ERROR   ❌ Erro ao carregar dados do profissional: {"message":"Erro de conexão com o servidor.","status":0}
+[01:16:34.639] Browser LOG     🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição
+[01:16:34.639] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:16:34.639] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:16:34.639] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:16:34.639] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:16:34.639] Browser LOG     🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição
+[01:16:34.639] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:16:34.639] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:16:34.639] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:16:34.639] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:16:34.639] Browser ERROR   ❌ Erro ao carregar dados do profissional: {"message":"Erro de conexão com o servidor.","status":0}
+[01:16:34.639] Browser ERROR   ❌ DEBUG: Erro ao carregar serviços: {"message":"Erro de conexão com o servidor.","status":0}
+[01:16:34.639] Browser ERROR   ❌ DEBUG: Erro ao carregar serviços: {"message":"Erro de conexão com o servidor.","status":0}
+[01:16:34.639] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:16:39.655] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:16:39.655] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:16:49.007] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137279865}
+[01:18:56.074] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137406921}
+[01:19:58.617] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137469487}
+[01:20:47.857] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:20:47.857] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:20:47.857] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:20:47.857] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:20:47.857] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137518651}
+[01:20:47.857] Browser ERROR   ❌ Erro ao carregar dados do profissional: {"message":"Erro de conexão com o servidor.","status":0}
+[01:20:47.857] Browser ERROR   ❌ Erro ao carregar dados do profissional: {"message":"Erro de conexão com o servidor.","status":0}
+[01:20:47.857] Browser LOG     🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição
+[01:20:47.857] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:20:47.857] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:20:47.857] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:20:47.857] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:20:47.857] Browser LOG     🔍 DEBUG: Nenhuma descrição encontrada, entrando em modo de edição
+[01:20:47.857] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:20:47.857] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:20:47.857] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:20:47.857] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:20:47.857] Browser ERROR   ❌ DEBUG: Erro ao carregar serviços: {"message":"Erro de conexão com o servidor.","status":0}
+[01:20:47.857] Browser ERROR   ❌ DEBUG: Erro ao carregar serviços: {"message":"Erro de conexão com o servidor.","status":0}
+[01:20:47.857] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:20:52.928] Browser LOG     🔍 DEBUG: Nenhum horário encontrado, entrando em modo de edição
+[01:28:17.238] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765137968106}
+[01:28:50.921] Server  LOG      ✓ Compiled in 70ms
+[01:29:44.683] Server  WARN    Error: Route "/agendar/[designerId]" used `params.designerId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:29:44.886] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42 color: rgb(120, 120, 120) color: inherit {"dp":"/agendar/[designerId]","o":"http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138055735}
+[01:31:25.474] Server  LOG      ✓ Compiled in 111ms
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:31:25.756] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.756] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:31:25.941] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:31:25.941] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.941] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.941] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:31:25.941] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:31:25.941] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:00.516] Server  LOG      ✓ Compiled in 48ms
+[01:32:00.577] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:00.577] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:12.473] Server  LOG      ✓ Compiled in 39ms
+[01:32:12.534] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:12.534] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.572] Server  WARN    Error: Route "/agendar/[designerId]" used `params.designerId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:32:32.932] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:32.932] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[01:32:32.932] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","route":"/agendar/[designerId]"}
+[01:32:32.932] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42 color: rgb(120, 120, 120) color: inherit {"dp":"/agendar/[designerId]","o":"http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138223801}
+[01:32:38.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138229240}
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:32:40.898] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42 color: rgb(120, 120, 120) color: inherit {"dp":"/agendar/[designerId]","o":"http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138231741}
+[01:32:40.898] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:32:40.898] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:32:40.898] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:01.453] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138252315}
+[01:33:02.785] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:33:02.785] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:33:02.785] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:33:02.785] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:33:02.785] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138253654}
+[01:33:03.300] Browser LOG     🔒 Status da resposta: 200
+[01:33:03.300] Browser LOG     🔒 Status da resposta: 200
+[01:33:03.300] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:33:03.300] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:33:03.300] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:33:03.300] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:33:03.300] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:33:03.300] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:33:03.300] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:33:03.300] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:33:03.300] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:33:03.300] Browser LOG     ✅ Políticas carregadas do backend
+[01:33:03.300] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:33:03.300] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:33:03.300] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:33:03.300] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:33:03.300] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:33:03.300] Browser LOG     ✅ Políticas carregadas do backend
+[01:33:03.300] Browser LOG     🔒 Status da resposta: 200
+[01:33:03.300] Browser LOG     🔒 Status da resposta: 200
+[01:33:03.300] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:33:03.300] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:33:03.300] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:33:03.300] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:33:06.183] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138257053}
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 Carregando dados da profissional: undefined
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 DEBUG: Buscando dados públicos da profissional: undefined
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser LOG     🔍 DEBUG: Buscando serviços da profissional: undefined
+[01:33:07.502] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42 color: rgb(120, 120, 120) color: inherit {"dp":"/agendar/[designerId]","o":"http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138258353}
+[01:33:07.502] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:33:07.502] Browser ERROR   ❌ Erro ao carregar dados: {}
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:07.502] Browser ERROR   A param property was accessed directly with `params.designerId`. `params` is a Promise and must be unwrapped with `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:33:14.153] Server  WARN    Error: Route "/agendar/[designerId]" used `params.designerId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:35:00.609] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138371461}
+[01:39:33.489] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:39:33.489] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:39:33.489] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:39:33.489] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:39:33.489] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138644241}
+[01:39:33.489] Browser LOG     🔒 Status da resposta: 200
+[01:39:33.489] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:39:33.489] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:39:33.489] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:39:33.489] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:39:33.489] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:39:33.489] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:39:33.489] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:39:33.489] Browser LOG     ✅ Políticas carregadas do backend
+[01:39:33.489] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:39:33.489] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:39:33.489] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:39:33.489] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:39:33.489] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:39:33.489] Browser LOG     ✅ Políticas carregadas do backend
+[01:39:33.489] Browser LOG     🔒 Status da resposta: 200
+[01:39:33.489] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:39:33.489] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:39:33.489] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:39:33.489] Browser LOG     ✅ Políticas carregadas do backend
+[01:39:33.489] Browser LOG     🔒 Status da resposta: 200
+[01:39:33.489] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:39:33.489] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:39:33.489] Browser LOG     🔒 Status da resposta: 200
+[01:39:33.489] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:39:33.489] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:39:38.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138648917}
+[01:39:48.169] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138659014}
+[01:39:51.120] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138661987}
+[01:39:52.234] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138663105}
+[01:41:03.956] Server  LOG      ✓ Compiled in 129ms
+[01:41:25.676] Server  WARN    Error: Route "/agendar/[designerId]" used `params.designerId`. `params` is a Promise and must be unwrapped with `await` or `React.use()` before accessing its properties. Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis
+[01:41:25.903] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42 color: rgb(120, 120, 120) color: inherit {"dp":"/agendar/[designerId]","o":"http://localhost:3000/agendar/bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765138756752}
+[01:43:23.586] Server  LOG      ✓ Compiled in 92ms
+[01:44:09.847] Browser LOG     🔍 Verificando telefone: 7398805168
+[01:44:50.855] Browser LOG     🔍 Verificando telefone: 7398805168
+[01:49:42.844] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:49:42.844] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:49:42.845] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[01:49:42.845] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[01:49:42.845] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139253601}
+[01:49:42.845] Browser LOG     🔒 Status da resposta: 200
+[01:49:42.845] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:49:42.845] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:49:42.845] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:49:42.845] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:49:42.845] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:49:42.845] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:49:42.845] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:49:42.845] Browser LOG     ✅ Políticas carregadas do backend
+[01:49:42.845] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[01:49:42.845] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:49:42.845] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[01:49:42.845] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[01:49:42.845] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[01:49:42.845] Browser LOG     ✅ Políticas carregadas do backend
+[01:49:42.845] Browser LOG     🔒 Status da resposta: 200
+[01:49:42.845] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":6,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[01:49:42.845] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[01:49:42.845] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[01:49:42.845] Browser LOG     ✅ Políticas carregadas do backend
+[01:49:42.845] Browser LOG     🔒 Status da resposta: 200
+[01:49:42.845] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:49:42.845] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:49:42.845] Browser LOG     🔒 Status da resposta: 200
+[01:49:42.845] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:49:42.845] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[01:49:52.168] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"}
+[01:49:52.168] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[01:49:52.168] Browser LOG     🔒 Status da resposta: 200
+[01:49:52.168] Browser LOG     ✅ Políticas configuradas com sucesso!
+[01:50:08.559] Browser LOG     🔍 DEBUG - Configurando agenda: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00"}]
+[01:50:08.559] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda
+[01:50:08.559] Browser LOG     🔒 Status da resposta: 201
+[01:50:08.559] Browser LOG     ✅ Horários configurados com sucesso!
+[01:50:17.804] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139288661}
+[01:50:36.492] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139307343}
+[01:50:39.325] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139310194}
+[01:51:58.560] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139389430}
+[01:52:36.365] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-hoje color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-hoje","o":"http://localhost:3000/dashboard/agendamentos-hoje","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139427233}
+[01:52:40.427] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139431282}
+[01:53:17.129] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139467989}
+[01:53:34.438] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139485291}
+[01:53:35.752] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139486612}
+[01:53:40.907] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/agendamentos-mes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/agendamentos-mes","o":"http://localhost:3000/dashboard/agendamentos-mes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765139491762}
+[02:10:26.313] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/login color: rgb(120, 120, 120) color: inherit {"dp":"/login","o":"http://localhost:3000/login","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765140497175}
+[02:10:42.989] Browser LOG     🔍 DEBUG LOGIN - URL completa: http://localhost:8080/agendou/api/v1/auth/login
+[02:10:42.989] Browser LOG     🔍 DEBUG LOGIN - Dados enviados: {"email":"nanda1510@gmail.com","senha":"***"}
+[02:10:43.511] Browser LOG     🔍 DEBUG LOGIN - Status da resposta: 200
+[02:10:43.511] Browser LOG     🔍 DEBUG LOGIN - Token recebido: {"tipo":"Bearer","token":"eyJhbGciOiJIUzI1NiJ9...","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[02:10:43.511] Browser LOG     ✅ Login realizado com sucesso! {"tipo":"Bearer","usuarioId":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42"}
+[02:10:43.511] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765140514380}
+[02:10:58.371] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:10:58.371] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:10:58.371] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:10:58.371] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:10:58.371] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765140529040}
+[02:10:58.371] Browser LOG     🔒 Status da resposta: 200
+[02:10:58.371] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:10:58.371] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:10:58.371] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:10:58.371] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:10:58.371] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:10:58.371] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:10:58.371] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:10:58.371] Browser LOG     ✅ Políticas carregadas do backend
+[02:10:58.371] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:10:58.371] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:10:58.371] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:10:58.371] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:10:58.371] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:10:58.371] Browser LOG     ✅ Políticas carregadas do backend
+[02:10:58.371] Browser LOG     🔒 Status da resposta: 200
+[02:10:58.371] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:10:58.371] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:10:58.371] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:10:58.371] Browser LOG     ✅ Políticas carregadas do backend
+[02:10:58.371] Browser LOG     🔒 Status da resposta: 200
+[02:10:58.371] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:10:58.371] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:10:58.371] Browser LOG     🔒 Status da resposta: 200
+[02:10:58.371] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:10:58.371] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:23:15.783] Server  LOG      ✓ Compiled in 76ms
+[02:24:06.206] Server  LOG      ✓ Compiled in 136ms
+[02:24:17.050] Server  LOG      ✓ Compiled in 64ms
+[02:24:24.887] Server  LOG      ✓ Compiled in 79ms
+[02:24:25.983] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:24:25.983] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:24:25.983] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:24:25.983] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:24:25.983] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:24:25.983] Browser LOG     ✅ Políticas carregadas do backend
+[02:24:25.983] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:24:25.983] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:24:25.983] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:24:25.983] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:24:25.983] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:24:25.983] Browser LOG     ✅ Políticas carregadas do backend
+[02:24:25.983] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:24:25.983] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:24:25.983] Browser LOG     🔒 Status da resposta: 200
+[02:24:25.983] Browser LOG     🔒 Status da resposta: 200
+[02:24:25.983] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:25.983] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:25.983] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:25.983] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:57.066] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141367927}
+[02:24:57.927] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:24:57.927] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:24:57.927] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141368634}
+[02:24:57.927] Browser LOG     🔒 Status da resposta: 200
+[02:24:57.927] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:24:57.927] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:24:57.927] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:24:57.927] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:24:57.927] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:24:57.927] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:24:57.927] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:24:57.927] Browser LOG     ✅ Políticas carregadas do backend
+[02:24:57.927] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:24:57.927] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:24:57.927] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:24:57.927] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:24:57.927] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:24:57.927] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:24:57.927] Browser LOG     ✅ Políticas carregadas do backend
+[02:24:57.927] Browser LOG     🔒 Status da resposta: 200
+[02:24:57.927] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:24:57.927] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:24:57.927] Browser LOG     🔒 Status da resposta: 200
+[02:24:57.927] Browser LOG     🔒 Status da resposta: 200
+[02:24:57.927] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:24:57.927] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:24:57.927] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:57.927] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:57.927] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:24:57.927] Browser LOG     ✅ Políticas carregadas do backend
+[02:24:57.927] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:24:57.927] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:26:25.748] Server  LOG      ✓ Compiled in 65ms
+[02:27:02.505] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard","o":"http://localhost:3000/dashboard","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141493369}
+[02:27:04.794] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141495650}
+[02:27:05.897] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:27:05.898] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:27:05.898] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141496646}
+[02:27:05.898] Browser LOG     🔒 Status da resposta: 200
+[02:27:05.898] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:27:05.898] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:27:05.898] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:27:05.898] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:27:05.898] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:27:05.898] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:27:05.898] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:27:05.898] Browser LOG     ✅ Políticas carregadas do backend
+[02:27:05.898] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:27:05.898] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:27:05.898] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:27:05.898] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:27:05.898] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:27:05.898] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:27:05.898] Browser LOG     ✅ Políticas carregadas do backend
+[02:27:05.898] Browser LOG     🔒 Status da resposta: 200
+[02:27:05.898] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:27:05.898] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:27:05.898] Browser LOG     🔒 Status da resposta: 200
+[02:27:05.898] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:27:05.898] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:27:05.898] Browser LOG     🔒 Status da resposta: 200
+[02:27:05.898] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:27:05.898] Browser LOG     ✅ Políticas carregadas do backend
+[02:27:05.898] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:27:05.898] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:27:05.898] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:27:05.898] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:28:10.008] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141560869}
+[02:28:11.023] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:28:11.023] Browser LOG     🔍 DEBUG - Obtendo dados do profissional
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/profissional
+[02:28:11.023] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141561764}
+[02:28:11.023] Browser LOG     🔒 Status da resposta: 200
+[02:28:11.023] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:28:11.023] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:28:11.023] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:28:11.023] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:28:11.023] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:28:11.023] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:28:11.023] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:28:11.023] Browser LOG     ✅ Políticas carregadas do backend
+[02:28:11.023] Browser LOG     🔍 DEBUG: Inicializando ProfileConfig com descrição: Sou nail designer artistica
+[02:28:11.023] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:28:11.023] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:28:11.023] Browser LOG     🔍 DEBUG: Carregando serviços do profissional
+[02:28:11.023] Browser LOG     🔍 DEBUG - Listando serviços do profissional
+[02:28:11.023] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/servico
+[02:28:11.023] Browser LOG     ✅ Políticas carregadas do backend
+[02:28:11.023] Browser LOG     🔒 Status da resposta: 200
+[02:28:11.023] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:28:11.023] Browser ERROR   ❌ Erro ao carregar exceções: {"message":"Erro de conexão com o servidor.","status":0}
+[02:28:11.023] Browser LOG     🔒 Status da resposta: 200
+[02:28:11.023] Browser LOG     ✅ DEBUG - Dados do profissional obtidos com sucesso: {"configuracao":{"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"ola","msgPosAtendimento":"tchau"},"descricao":"Sou nail designer artistica","horarios":[{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}],"id":"6a4b7db8-8b08-4995-bb0c-b77dabe934c0","usuario":{"email":"nanda1510@gmail.com","id":"bfcbd3f4-b5ca-42ea-bb16-250a3b627d42","nomeCompleto":"Fernanda Carvalho","nomeFantasia":"TaLinda","tipo":"FREE","whatsapp":"5573988805168"}}
+[02:28:11.023] Browser LOG     ✅ Dados do profissional carregados com sucesso
+[02:28:11.023] Browser LOG     🔍 DEBUG: Inicializando WorkingHoursConfig com horários: [{"diaSemana":1,"horaFim":"18:00","horaInicio":"07:00","id":"482c8438-8e82-471a-89d8-b18fd4f11d9a"},{"diaSemana":2,"horaFim":"18:00","horaInicio":"07:00","id":"ed94fed1-cc0d-4f48-9e6a-8dd27dece5c5"},{"diaSemana":3,"horaFim":"18:00","horaInicio":"07:00","id":"b6eb91d4-1d15-4f2e-845b-e0181de639d8"},{"diaSemana":4,"horaFim":"18:00","horaInicio":"07:00","id":"4af8de2e-72c0-4a4a-b85e-ecbdf82b0062"},{"diaSemana":5,"horaFim":"18:00","horaInicio":"07:00","id":"b0e68720-b98c-4345-9c01-12518817b080"},{"diaSemana":6,"horaFim":"18:00","horaInicio":"07:00","id":"a96920fe-cda1-4fa4-98ca-e0f3782c3a5c"}]
+[02:28:11.023] Browser LOG     ✅ Políticas carregadas do backend
+[02:28:11.023] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:28:11.023] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:28:11.023] Browser LOG     🔒 Status da resposta: 200
+[02:28:11.023] Browser LOG     ✅ DEBUG - Serviços listados com sucesso: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:28:11.023] Browser LOG     ✅ DEBUG: Serviços carregados: [{"descricao":null,"duracaoMin":180,"id":"c662bdf4-300d-4055-b5d2-43cd83fe0509","nome":"Unha em gel"},{"descricao":null,"duracaoMin":180,"id":"18502404-a516-4b71-bdc1-8fa442709ea5","nome":"Unha encapsulada"}]
+[02:29:13.355] Server  LOG      ✓ Compiled in 76ms
+[02:29:26.084] Server  LOG      ✓ Compiled in 75ms
+[02:29:37.665] Server  LOG      ✓ Compiled in 60ms
+[02:29:47.309] Server  LOG      ✓ Compiled in 54ms
+[02:30:31.351] Browser LOG     📅 AgendaExcecaoService - criarExcecao - request: {"dataExcecao":"2025-12-08","diaInteiroFechado":false,"horaFim":"13:00","horaInicio":"07:00"}
+[02:30:31.351] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/apihttp://localhost:8080/agendou/api/v1/agenda/excecao
+[02:30:31.351] Browser ERROR   ❌ Erro ao criar exceção: {"message":"Erro de conexão com o servidor.","status":0}
+[02:31:14.444] Server  LOG      ✓ Compiled in 74ms
+[02:31:37.586] Browser LOG     📅 AgendaExcecaoService - criarExcecao - request: {"dataExcecao":"2025-12-08","diaInteiroFechado":false,"horaFim":"13:00","horaInicio":"07:00"}
+[02:31:37.586] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda/excecao
+[02:31:37.586] Browser LOG     🔒 Status da resposta: 201
+[02:31:37.586] Browser LOG     ✅ AgendaExcecaoService - criarExcecao - response: {"dataExcecao":"2025-12-08","diaInteiroFechado":false,"horaFim":"13:00","horaInicio":"07:00","id":"808b36cc-8e49-411b-baf5-e5d87d8efca7"}
+[02:31:37.586] Browser LOG     📅 AgendaExcecaoService - listarExcecoes
+[02:31:37.587] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda/excecao
+[02:31:37.587] Browser LOG     🔒 Status da resposta: 200
+[02:31:37.587] Browser LOG     ✅ AgendaExcecaoService - listarExcecoes - count: 2
+[02:31:53.179] Browser LOG     📅 AgendaExcecaoService - criarExcecao - request: {"dataExcecao":"2025-12-07","diaInteiroFechado":true}
+[02:31:53.180] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/agenda/excecao
+[02:31:53.180] Browser LOG     🔒 Status da resposta: 409
+[02:31:53.180] Browser ERROR   ❌ Erro ao criar exceção: {"message":"Já existe uma exceção de dia inteiro fechado para esta data","status":409}
+[02:32:08.797] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765141799655}

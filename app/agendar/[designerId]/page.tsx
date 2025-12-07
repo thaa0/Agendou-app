@@ -2,14 +2,14 @@ import { BookingForm } from "@/components/booking-form"
 import { Sparkles } from "lucide-react"
 
 export default function AgendarPage({ params }: { params: { designerId: string } }) {
-  // Mock data - substituir com dados reais do banco
+  // Mock data temporário - será substituído quando os endpoints públicos estiverem prontos
   const designerInfo = {
-    name: "Juliana Nails",
+    name: "Profissional",
+    description: "Agende seu atendimento",
     services: [
-      { id: 1, name: "Esmaltação em Gel", duration: 60 },
-      { id: 2, name: "Alongamento", duration: 120 },
-      { id: 3, name: "Manutenção", duration: 90 },
-      { id: 4, name: "Nail Art", duration: 75 },
+      { id: "1", name: "Serviço 1", duration: 60 },
+      { id: "2", name: "Serviço 2", duration: 90 },
+      { id: "3", name: "Serviço 3", duration: 120 },
     ],
   }
 
@@ -21,7 +21,8 @@ export default function AgendarPage({ params }: { params: { designerId: string }
             <Sparkles className="w-8 h-8 text-primary" />
           </div>
           <h1 className="text-4xl font-bold text-balance mb-2">{designerInfo.name}</h1>
-          <p className="text-muted-foreground">Agende seu horário de forma rápida e fácil</p>
+          <p className="text-muted-foreground">{designerInfo.description}</p>
+          <p className="text-xs text-muted-foreground mt-2">ID: {params.designerId}</p>
         </div>
 
         <BookingForm designerInfo={designerInfo} designerId={params.designerId} />

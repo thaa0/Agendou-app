@@ -277,7 +277,8 @@ const API_CONFIG = {
             politicas: '/v1/configuracao'
         },
         agenda: {
-            configurar: '/v1/agenda'
+            configurar: '/v1/agenda',
+            excecao: '/v1/agenda/excecao'
         },
         servico: {
             base: '/v1/servico',

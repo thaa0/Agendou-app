@@ -8,12 +8,12 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Button } from "@/components/ui/button"
-import { Calendar, Clock } from "lucide-react"
+import { Calendar, Clock, ArrowRight, ArrowLeft } from "lucide-react"
 import { useRouter } from "next/navigation"
 import { getTodayISO } from "@/lib/date-utils"
 
 type Service = {
-  id: number
+  id: number | string
   name: string
   duration: number
 }
@@ -28,6 +28,8 @@ type BookingFormProps = {
 
 export function BookingForm({ designerInfo, designerId }: BookingFormProps) {
   const router = useRouter()
+  const [step, setStep] = useState(1) // 1: Telefone, 2: Dados completos
+  const [isCheckingPhone, setIsCheckingPhone] = useState(false)
   const [formData, setFormData] = useState({
     name: "",
     birthDate: "",
@@ -37,7 +39,37 @@ export function BookingForm({ designerInfo, designerId }: BookingFormProps) {
     time: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handlePhoneSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    
+    if (!formData.phone) {
+      return
+    }
+
+    setIsCheckingPhone(true)
+    
+    try {
+      // TODO: Fazer chamada ao backend para verificar se o telefone já existe
+      // const cliente = await verificarClientePorTelefone(formData.phone)
+      // if (cliente) {
+      //   setFormData({ ...formData, name: cliente.nome, birthDate: cliente.dataNascimento })
+      // }
+      
+      console.log('🔍 Verificando telefone:', formData.phone)
+      
+      // Simula delay de requisição
+      await new Promise(resolve => setTimeout(resolve, 500))
+      
+      // Avança para o próximo passo
+      setStep(2)
+    } catch (error) {
+      console.error('❌ Erro ao verificar telefone:', error)
+    } finally {
+      setIsCheckingPhone(false)
+    }
+  }
+
+  const handleBookingSubmit = (e: React.FormEvent) => {
     e.preventDefault()
 
     // Verificar disponibilidade e redirecionar
@@ -54,15 +86,77 @@ export function BookingForm({ designerInfo, designerId }: BookingFormProps) {
 
   const selectedService = designerInfo.services.find((s) => s.id.toString() === formData.serviceId)
 
+  // Etapa 1: Solicitar telefone
+  if (step === 1) {
+    return (
+      <Card>
+        <CardHeader>
+          <CardTitle>Novo Agendamento</CardTitle>
+          <CardDescription>Primeiro, informe seu telefone</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <form onSubmit={handlePhoneSubmit} className="space-y-6">
+            <div className="space-y-2">
+              <Label htmlFor="phone">Telefone / WhatsApp</Label>
+              <Input
+                id="phone"
+                type="tel"
+                placeholder="(00) 00000-0000"
+                value={formData.phone}
+                onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                required
+                autoFocus
+              />
+              <p className="text-xs text-muted-foreground">
+                Usaremos para identificar se você já é nosso cliente
+              </p>
+            </div>
+
+            <Button 
+              type="submit" 
+              className="w-full gap-2" 
+              size="lg"
+              disabled={isCheckingPhone}
+            >
+              {isCheckingPhone ? 'Verificando...' : 'Continuar'}
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </form>
+        </CardContent>
+      </Card>
+    )
+  }
+
+  // Etapa 2: Formulário completo
   return (
     <Card>
       <CardHeader>
         <CardTitle>Novo Agendamento</CardTitle>
-        <CardDescription>Preencha seus dados para agendar</CardDescription>
+        <CardDescription>Complete seus dados para agendar</CardDescription>
       </CardHeader>
       <CardContent>
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleBookingSubmit} className="space-y-6">
           <div className="space-y-4">
+            <div className="space-y-2">
+              <Label htmlFor="phone-display">Telefone / WhatsApp</Label>
+              <div className="flex gap-2">
+                <Input
+                  id="phone-display"
+                  type="tel"
+                  value={formData.phone}
+                  disabled
+                  className="flex-1"
+                />
+                <Button
+                  type="button"
+                  variant="outline"
+                  onClick={() => setStep(1)}
+                >
+                  <ArrowLeft className="w-4 h-4" />
+                </Button>
+              </div>
+            </div>
+
             <div className="space-y-2">
               <Label htmlFor="name">Nome Completo</Label>
               <Input
@@ -74,29 +168,15 @@ export function BookingForm({ designerInfo, designerId }: BookingFormProps) {
               />
             </div>
 
-            <div className="grid gap-4 md:grid-cols-2">
-              <div className="space-y-2">
-                <Label htmlFor="birthDate">Data de Nascimento</Label>
-                <Input
-                  id="birthDate"
-                  type="date"
-                  value={formData.birthDate}
-                  onChange={(e) => setFormData({ ...formData, birthDate: e.target.value })}
-                  required
-                />
-              </div>
-
-              <div className="space-y-2">
-                <Label htmlFor="phone">Telefone</Label>
-                <Input
-                  id="phone"
-                  type="tel"
-                  placeholder="(00) 00000-0000"
-                  value={formData.phone}
-                  onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  required
-                />
-              </div>
+            <div className="space-y-2">
+              <Label htmlFor="birthDate">Data de Nascimento</Label>
+              <Input
+                id="birthDate"
+                type="date"
+                value={formData.birthDate}
+                onChange={(e) => setFormData({ ...formData, birthDate: e.target.value })}
+                required
+              />
             </div>
 
             <div className="space-y-2">

@@ -1,4 +1,5 @@
 {
+  "/agendar/[designerId]/page": "app/agendar/[designerId]/page.js",
   "/dashboard/agendamentos-hoje/page": "app/dashboard/agendamentos-hoje/page.js",
   "/dashboard/agendamentos-mes/page": "app/dashboard/agendamentos-mes/page.js",
   "/dashboard/configuracoes/page": "app/dashboard/configuracoes/page.js",

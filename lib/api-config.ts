@@ -17,6 +17,7 @@ export const API_CONFIG = {
     },
     agenda: {
       configurar: '/v1/agenda',
+      excecao: '/v1/agenda/excecao',
     },
     servico: {
       base: '/v1/servico',
