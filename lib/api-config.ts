@@ -8,6 +8,9 @@ export const API_CONFIG = {
       cadastro: '/v1/auth/cadastro',
       login: '/v1/auth/login',
     },
+    profissional: {
+      finalizarCadastro: '/v1/profissional',
+    },
   },
 } as const
 

@@ -60,12 +60,18 @@ export class ApiService {
         } as ApiError
       }
 
-      // Se for 204 No Content, retorna undefined
-      if (response.status === 204) {
+      // Se for 204 No Content ou 200 sem corpo, retorna undefined
+      if (response.status === 204 || response.headers.get('content-length') === '0') {
         return undefined as T
       }
 
-      return response.json()
+      // Verifica se há conteúdo antes de fazer parse
+      const text = await response.text()
+      if (!text || text.trim() === '') {
+        return undefined as T
+      }
+
+      return JSON.parse(text)
     } catch (error) {
       if ((error as ApiError).status) {
         throw error

@@ -268,6 +268,9 @@ const API_CONFIG = {
         auth: {
             cadastro: '/v1/auth/cadastro',
             login: '/v1/auth/login'
+        },
+        profissional: {
+            finalizarCadastro: '/v1/profissional'
         }
     }
 };
