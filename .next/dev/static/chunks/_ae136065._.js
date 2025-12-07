@@ -271,6 +271,9 @@ const API_CONFIG = {
         },
         profissional: {
             finalizarCadastro: '/v1/profissional'
+        },
+        configuracao: {
+            politicas: '/v1/configuracao'
         }
     }
 };

@@ -69,3 +69,17 @@
 [00:33:36.734] Browser LOG     ✅ Cadastro profissional finalizado com sucesso!
 [00:33:43.627] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131092552}
 [00:33:44.772] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131093746}
+[00:36:36.519] Server  LOG      ✓ Compiled in 96ms
+[00:37:25.858] Server  LOG      ✓ Compiled in 157ms
+[00:38:33.199] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131382122}
+[00:38:34.297] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131383240}
+[00:40:11.495] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":12,"msgLembreteAtendimento":"Olá, {nome} este é um lembrete do seu atendimento ás {horario}","msgPosAtendimento":"Obrigada por confiar no meu trabalho, {nome}!"}
+[00:40:11.495] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[00:40:11.641] Browser LOG     🔒 Status da resposta: 200
+[00:40:11.641] Browser LOG     ✅ Políticas configuradas com sucesso!
+[00:40:25.629] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/produtos color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/produtos","o":"http://localhost:3000/dashboard/produtos","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131494561}
+[00:40:26.955] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/dashboard/configuracoes color: rgb(120, 120, 120) color: inherit {"dp":"/dashboard/configuracoes","o":"http://localhost:3000/dashboard/configuracoes","sdkn":"@vercel/analytics/next","sdkv":"1.5.0","sv":"0.1.3","ts":1765131495889}
+[00:41:09.378] Browser LOG     🔍 DEBUG - Configurando políticas: {"intervaloCancelamentoHoras":13,"msgLembreteAtendimento":"ola, seja bem vinda, {nome}","msgPosAtendimento":"Ola, {nome}, obrigada por confiar no meu trabalho!"}
+[00:41:09.378] Browser LOG     🔒 Requisição autenticada para: http://localhost:8080/agendou/api/v1/configuracao
+[00:41:09.378] Browser LOG     🔒 Status da resposta: 200
+[00:41:09.379] Browser LOG     ✅ Políticas configuradas com sucesso!
